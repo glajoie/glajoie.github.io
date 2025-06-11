@@ -188,6 +188,6 @@
   <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
 {% endif %}
 
-{% if page.easter-eggs %}
+{% if page['easter-eggs'] %}
   <script src="{{ '/assets/js/confetti.browser.min.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}

@@ -5,7 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        {{ site.first_name }} {{ site.middle_name }}
+        {{ site.first_name }}
+        {{ site.middle_name }}
         <span class="post-title-bold">{{ site.last_name }}</span>
       {% else %}
         {{ site.title }}
@@ -29,7 +30,7 @@ layout: default
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true id="about-profile-img"
           %}
-          {% if page.easter-eggs %}
+          {% if page['easter-eggs'] %}
             {% assign easter_egg_gif_path = 'assets/img/easter-egg.gif' %}
             {%
               include figure.liquid loading="eager" path=easter_egg_gif_path class=profile_image_class sizes=sizes alt='Easter Egg GIF'

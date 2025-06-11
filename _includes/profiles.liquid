@@ -15,7 +15,7 @@
             {% if profile.image %}
               {% assign profile_image_path = profile.image | prepend: 'assets/img/profiles/' %}
             {% else %}
-            {% assign profile_image_path = 'assets/img/placeholder.jpg' %}
+              {% assign profile_image_path = 'assets/img/placeholder.jpg' %}
             {% endif %}
             {% if profile.image_circular %}
               {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded-circle' %}
@@ -31,19 +31,23 @@
 
           <div class="clearfix">
             <h4 id="{{ profile.name | slugify }}">{{ profile.name }}</h4>
-            {% if profile.co-supervisor %}
-              {% assign co-supervisors = profile.co-supervisor | split: " & " %}
-              <h6><i>(co-supervised by
-              {% for cs in co-supervisors %}
-                {%- if forloop.first -%}
-                  <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
-                {%- elsif forloop.last == false -%}
-                  , <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
-                {%- else -%}
-                  {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
-                {%- endif -%}
-              {%- endfor -%}
-              )</i></h6>
+            {% if profile['co-supervisor'] %}
+              {% assign co-supervisors = profile['co-supervisor'] | split: ' & ' %}
+              <h6>
+                <i
+                  >(co-supervised by
+                  {% for cs in co-supervisors %}
+                    {%- if forloop.first -%}
+                      <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                    {%- elsif forloop.last == false -%}
+                      , <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                    {%- else -%}
+                      {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                    {%- endif -%}
+                  {%- endfor -%}
+                  )</i
+                >
+              </h6>
             {% elsif group.name == 'Visitors' %}
               {%- capture supervisor -%}
                 {%- assign supervisors = profile.supervisor | split: " & " -%}
@@ -58,7 +62,9 @@
                 {%- endfor -%}
               {%- endcapture -%}
               {%- capture institute -%}<a href="{{ profile.institute.url }}">{{- profile.institute.name -}}</a>{%- endcapture -%}
-              <h6><i>(supervised by {{ supervisor }} at {{ institute }})</i></h6>
+              <h6>
+                <i>(supervised by {{ supervisor }} at {{ institute }})</i>
+              </h6>
             {% endif %}
             {% if profile.content %}
               {{ profile.content | markdownify }}
@@ -70,7 +76,7 @@
         {% assign alumni = include.profiles.items | group_by: 'title' %}
         {% for subgroup in alumni %}
           <ul class="profile-list">
-            {%  assign profiles = subgroup.items | sort_by: 'end' | reverse %}
+            {% assign profiles = subgroup.items | sort_by: 'end' | reverse %}
             {% for profile in subgroup.items %}
               <li class="profile-list-item">
                 {% capture time %}{% if profile.end %}, {% if profile.start %}{{ profile.start }}–{% endif %}{{ profile.end }}{% endif %}{% endcapture %}
@@ -91,7 +97,10 @@
                 {% endcapture %}
                 {% capture visiting %}{% if profile.title contains "Visiting" %} from {{ supervisor }}<a href="{{ profile.institute.url }}">{{ profile.institute.name }}</a>{%- endif -%}{%- endcapture -%}
                 {%- capture next -%}{% if profile.next %} → {{ profile.next }}{%- endif -%}{%- endcapture -%}
-                {{ profile.name }} ({{ profile.title }}{{ visiting }}{{ time }}{{ co-supervisor }}){{ next }}
+                {{ profile.name }} ({{ profile.title -}}
+                {{- visiting -}}
+                {{- time -}}
+                {{- co-supervisor }}){{ next }}
               </li>
             {% endfor %}
           </ul>

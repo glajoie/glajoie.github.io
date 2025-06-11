@@ -5,7 +5,7 @@
       {% if page.permalink != '/' %}
         <a class="navbar-brand title" href="{{ site.baseurl }}/">
           {% if page.permalink == '/group/' %}
-            <span class="navbar-brand-bold">{{- site.group_name |  split: ' ' | first -}}</span>
+            <span class="navbar-brand-bold">{{- site.group_name | split: ' ' | first -}}</span>
             Group
           {% elsif site.title == 'blank' %}
             {% if site.first_name %}

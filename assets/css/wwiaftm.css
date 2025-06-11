@@ -20,14 +20,16 @@
   right: 0;
 }
 
-.body-1, .body-2, .head {
+.body-1,
+.body-2,
+.head {
   top: -60px;
   height: 80px;
   width: 60px;
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  -webkit-transform: rotate3d(0,0,1,0deg);
-  transform: rotate3d(0,0,1,0deg);
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
 }
 
 .body-1 {
@@ -52,8 +54,8 @@
   width: 3.5px;
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  -webkit-transform: rotate3d(0,0,1,0deg);
-  transform: rotate3d(0,0,1,0deg);
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
   background-color: #cb3746;
   border-radius: 15%;
 }
@@ -111,7 +113,7 @@
 }
 
 .head .eye::before {
-  content: '';
+  content: "";
   height: 65%; /* Slightly larger pupil */
   width: 65%; /* Slightly larger pupil */
   background: black;
@@ -131,7 +133,8 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
-.arm-1, .arm-2 {
+.arm-1,
+.arm-2 {
   position: absolute;
   width: 50px;
   height: 20px;
@@ -143,15 +146,16 @@
   transform-origin: 100% 50%;
 }
 
-.arm-1.right, .arm-2.right {
+.arm-1.right,
+.arm-2.right {
   left: 90%;
   -webkit-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
 }
 
 .arm-1 .arm-2 {
-  -webkit-animation: flail .5s linear infinite;
-  animation: flail .5s linear infinite;
+  -webkit-animation: flail 0.5s linear infinite;
+  animation: flail 0.5s linear infinite;
   right: 80%;
   top: auto;
 }
@@ -163,36 +167,36 @@
 
 @-webkit-keyframes flail {
   0% {
-    -webkit-transform: rotate3d(0,0,1,0deg);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
   }
   25% {
-    -webkit-transform: rotate3d(0,0,1,50deg);
+    -webkit-transform: rotate3d(0, 0, 1, 50deg);
   }
   50% {
-    -webkit-transform: rotate3d(0,0,1,0deg);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
   }
   75% {
-    -webkit-transform: rotate3d(0,0,1,-50deg);
+    -webkit-transform: rotate3d(0, 0, 1, -50deg);
   }
   100% {
-    -webkit-transform: rotate3d(0,0,1,0deg);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
   }
 }
 
 @keyframes flail {
   0% {
-    transform: rotate3d(0,0,1,0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
   25% {
-    transform: rotate3d(0,0,1,50deg);
+    transform: rotate3d(0, 0, 1, 50deg);
   }
   50% {
-    transform: rotate3d(0,0,1,0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
   75% {
-    transform: rotate3d(0,0,1,-50deg);
+    transform: rotate3d(0, 0, 1, -50deg);
   }
   100% {
-    transform: rotate3d(0,0,1,0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
 }

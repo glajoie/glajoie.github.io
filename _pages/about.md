@@ -32,17 +32,20 @@ latest_posts:
 {% include bio_toggle.liquid easter-eggs=page.easter-eggs %}
 
 <!-- Social -->
+
 {% if page.social %}
+
   <div class="social">
     <div class="contact-icons">{% include social.liquid %}</div>
   </div>
 {% endif %}
 
 ## affiliations
-* Associate Professor, [Mathematics and Statistics](https://dms.umontreal.ca/en/), [Université de Montréal](https://www.umontreal.ca/en/)
-* Core Member, [Mila – Quebec AI Institute](https://mila.quebec/en)
-* Visiting Researcher, [Google Paradigms of Intelligence Team](https://github.com/paradigms-of-intelligence)
-* [Canada CIFAR AI Chair](https://cifar.ca/bios/guillaume-lajoie/)
-* [Canada Research Chair in Neural Computation and Interfacing](https://www.chairs-chaires.gc.ca/media-medias/lists-listes/2022/january-janvier-eng.aspx)
-* Research Center Affiliations: [UNIQUE](https://www.unique.quebec/home), [CIRCA](https://circa.openum.ca/en/), [CRM](https://www.crmath.ca/en/)
-* Departmental Accreditations (UdeM): [Computer Science and Operations Research](https://diro.umontreal.ca/english/home/), [Neuroscience](https://neurosciences.umontreal.ca)
+
+- Associate Professor, [Mathematics and Statistics](https://dms.umontreal.ca/en/), [Université de Montréal](https://www.umontreal.ca/en/)
+- Core Member, [Mila – Quebec AI Institute](https://mila.quebec/en)
+- Visiting Researcher, [Google Paradigms of Intelligence Team](https://github.com/paradigms-of-intelligence)
+- [Canada CIFAR AI Chair](https://cifar.ca/bios/guillaume-lajoie/)
+- [Canada Research Chair in Neural Computation and Interfacing](https://www.chairs-chaires.gc.ca/media-medias/lists-listes/2022/january-janvier-eng.aspx)
+- Research Center Affiliations: [UNIQUE](https://www.unique.quebec/home), [CIRCA](https://circa.openum.ca/en), [CRM](https://www.crmath.ca/en/)
+- Departmental Accreditations (UdeM): [Computer Science and Operations Research](https://diro.umontreal.ca/english/home/), [Neuroscience](https://neurosciences.umontreal.ca)
