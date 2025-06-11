@@ -38,10 +38,10 @@ ninja.data = [{
             window.location.href = "/fun/";
           },
         },{id: "news-as-we-welcome-spring-the-group-s-website-has-finally-been-updated-seedling-cherry-blossom",
-          title: 'As we welcome spring, the group’s website has finally been updated! :seedling: :cherry_blossom:...',
+          title: 'As we welcome spring, the group’s website has finally been updated! :seedling: :cherry_blossom:...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
           section: "News",},{id: "news-congratulations-to-dr-françois-paugam-for-successfully-defending-his-phd-thesis-mortar-board",
-          title: 'Congratulations to Dr. François Paugam for successfully defending his PhD thesis! :mortar_board:',
+          title: 'Congratulations to Dr. François Paugam for successfully defending his PhD thesis! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
           section: "News",},{
         id: 'social-email',
