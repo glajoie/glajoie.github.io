@@ -7,6 +7,16 @@ nav: true
 nav_order: 3
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+#### MAT6215: Dynamical Systems (Systèmes Dynamiques)
 
-Organize your courses by years, topics, or universities, however you like!
+**Latest edition:** Winter 2025<br/>
+**Previous editions:** Winters 2021–24, Fall 2018 & Winter 2020 as MAT6115: Non-linear Differential Equations (Équations différentielles non-linéaires)
+
+#### MAT1919: Math and ML for Cognitive Neuroscience
+
+**Latest edition:** Winter 2025<br/>
+**Previous editions:** Winters 2023–24
+
+#### MAT1720 Probabilities (Probabilités)
+
+**Last edition:** Summer 2018
