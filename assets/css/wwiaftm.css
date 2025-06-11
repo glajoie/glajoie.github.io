@@ -1,0 +1,198 @@
+.wwiaftm-container {
+  position: relative;
+  width: 200px;
+  height: 320px;
+  margin: auto;
+}
+
+.wwiaftm {
+  background: #354b97;
+  position: absolute;
+  margin: auto;
+  border-radius: 25%;
+}
+
+.base {
+  width: 60px;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.body-1, .body-2, .head {
+  top: -60px;
+  height: 80px;
+  width: 60px;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotate3d(0,0,1,0deg);
+  transform: rotate3d(0,0,1,0deg);
+}
+
+.body-1 {
+  -webkit-animation: flail 4s linear infinite;
+  animation: flail 4s linear infinite;
+}
+
+.body-2 {
+  -webkit-animation: flail 3s linear infinite;
+  animation: flail 3s linear infinite;
+}
+
+.head {
+  -webkit-animation: flail 2s linear infinite;
+  animation: flail 2s linear infinite;
+  z-index: 1;
+}
+
+.head .hair {
+  top: -14.5px;
+  height: 15px;
+  width: 3.5px;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotate3d(0,0,1,0deg);
+  transform: rotate3d(0,0,1,0deg);
+  background-color: #cb3746;
+  border-radius: 15%;
+}
+
+.hair-1 {
+  left: 12.5px;
+}
+
+.hair-2 {
+  left: 20.375px;
+}
+
+.hair-3 {
+  left: 28.25px;
+}
+
+.hair-4 {
+  left: 36.125px;
+}
+
+.hair-5 {
+  left: 44px;
+}
+
+.hair {
+  -webkit-animation: flail 2s linear infinite;
+  animation: flail 2s linear infinite;
+}
+
+.hairlet {
+  left: 0;
+  -webkit-animation: flail 0.75s linear infinite;
+  animation: flail 0.75s linear infinite;
+}
+
+.head .eye {
+  height: 25%; /* Increased height */
+  width: 20%; /* Increased width */
+  background: white;
+  position: absolute;
+  top: 25%;
+  border: 0.75px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .eye.right {
+  right: 22.5%; /* Moved closer */
+}
+
+.head .eye.left {
+  left: 22.5%; /* Moved closer */
+}
+
+.head .eye::before {
+  content: '';
+  height: 65%; /* Slightly larger pupil */
+  width: 65%; /* Slightly larger pupil */
+  background: black;
+  border-radius: 50%;
+  position: relative;
+  top: 2px; /* Moved down a few pixels */
+}
+
+.head .mouth {
+  position: absolute;
+  width: 60%;
+  height: 12.5%;
+  top: 60%;
+  left: 20%;
+  border: 1.5px solid black;
+  border-radius: 0% 0% 100% 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.arm-1, .arm-2 {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  right: 90%;
+  top: 25%;
+  -webkit-animation: flail 1s linear infinite;
+  animation: flail 1s linear infinite;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.arm-1.right, .arm-2.right {
+  left: 90%;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.arm-1 .arm-2 {
+  -webkit-animation: flail .5s linear infinite;
+  animation: flail .5s linear infinite;
+  right: 80%;
+  top: auto;
+}
+
+.arm-1 .arm-2.right {
+  left: 80%;
+  right: auto;
+}
+
+@-webkit-keyframes flail {
+  0% {
+    -webkit-transform: rotate3d(0,0,1,0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0,0,1,50deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0,0,1,0deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0,0,1,-50deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0,0,1,0deg);
+  }
+}
+
+@keyframes flail {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+  }
+  25% {
+    transform: rotate3d(0,0,1,50deg);
+  }
+  50% {
+    transform: rotate3d(0,0,1,0deg);
+  }
+  75% {
+    transform: rotate3d(0,0,1,-50deg);
+  }
+  100% {
+    transform: rotate3d(0,0,1,0deg);
+  }
+}

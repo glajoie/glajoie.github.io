@@ -1,9 +1,102 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"AISTATS":
+  url: https://aistats.org
 
-"PhysRev":
-  url: https://journals.aps.org/
+"CCAI":
+  url: https://www.caiac.ca/en/conferences
 
-"Vision":
-  color: "#009f36"
+"ICASSP":
+  url: https://signalprocessingsociety.org/events/conferences
+
+"ICLR":
+  url: https://iclr.cc/
+
+"IDA":
+  url: https://www.ida-society.org
+
+"ICML":
+  url: https://icml.cc/
+
+"MLSP":
+  url: https://signalprocessingsociety.org/events/conferences
+
+"NeurIPS":
+  url: https://neurips.cc/
+
+"NER":
+  url: https://neuro.embs.org/
+
+"BEME":
+  url: https://bioelecmed.biomedcentral.com
+  color: "#08573b"
+
+"Cell Rep Med":
+  url: https://www.cell.com/cell-reports-medicine/home
+  color: "#08573b"
+
+"eLife":
+  url: https://elifesciences.org
+  color: "#08573b"
+
+"Front AMS":
+  url: https://www.frontiersin.org/journals/applied-mathematics-and-statistics
+  color: "#08573b"
+
+"Imaging Neurosci":
+  url: https://direct.mit.edu/imag
+  color: "#08573b"
+
+"J Child Neurol":
+  url: https://journals.sagepub.com/home/jcn
+  color: "#08573b"
+
+"JNE":
+  url: https://iopscience.iop.org/journal/1741-2552
+  color: "#08573b"
+
+"KBS":
+  url: https://www.journals.elsevier.com/knowledge-based-systems
+  color: "#08573b"
+
+"Nat Commun":
+  url: https://www.nature.com/ncomms/
+  color: "#08573b"
+
+"Nat Comp Sci":
+  url: https://www.nature.com/natcomputsci
+  color: "#08573b"
+
+"Nat Mach Intell":
+  url: https://www.nature.com/natmachintell/
+  color: "#08573b"
+
+"Neural Comput":
+  url: https://direct.mit.edu/neco
+  color: "#08573b"
+
+"NC":
+  url: https://academic.oup.com/nc
+  color: "#08573b"
+
+"PLOS Comp Bio":
+  url: https://journals.plos.org/ploscompbiol/
+  color: "#08573b"
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#08573b"
+
+"TNSRE":
+  url: https://www.embs.org/tnsre/
+  color: "#08573b"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#c30000"
+
+"bioRxiv":
+  url: https://biorxiv.org/
+  color: "#c30000"
+
+"PsyArXiv":
+  url: https://osf.io/preprints/psyarxiv
+  color: "#c30000"

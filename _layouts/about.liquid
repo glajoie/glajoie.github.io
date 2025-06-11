@@ -5,8 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        {{ site.first_name }} {{ site.middle_name }}
+        <span class="post-title-bold">{{ site.last_name }}</span>
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -20,17 +20,61 @@ layout: default
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
+            cache_bust=true id="about-profile-img"
           %}
+          {% if page.easter-eggs %}
+            {% assign easter_egg_gif_path = 'assets/img/easter-egg.gif' %}
+            {%
+              include figure.liquid loading="eager" path=easter_egg_gif_path class=profile_image_class sizes=sizes alt='Easter Egg GIF'
+              cache_bust=true id="about-easter-egg-gif" hide=true avoid_scaling=true
+            %}
+            <link rel="stylesheet" href="{{ '/assets/css/wwiaftm.css' | relative_url | bust_file_cache }}">
+            <div id="wwiaftm-container" class="wwiaftm-container d-none">
+              <div class="base wwiaftm">
+                <div class="body-1 wwiaftm">
+                  <div class="body-2 wwiaftm">
+                    <div class="head wwiaftm">
+                      <div class="hair hair-1 wwiaftm">
+                        <div class="hair hairlet wwiaftm"></div>
+                      </div>
+                      <div class="hair hair-2 wwiaftm">
+                        <div class="hair hairlet wwiaftm"></div>
+                      </div>
+                      <div class="hair hair-3 wwiaftm">
+                        <div class="hair hairlet wwiaftm"></div>
+                      </div>
+                      <div class="hair hair-4 wwiaftm">
+                        <div class="hair hairlet wwiaftm"></div>
+                      </div>
+                      <div class="hair hair-5 wwiaftm">
+                        <div class="hair hairlet wwiaftm"></div>
+                      </div>
+                      <div class="eye left"></div>
+                      <div class="eye right"></div>
+                      <div class="mouth"></div>
+                    </div>
+                    <div class="wwiaftm arm-1 left">
+                      <div class="wwiaftm arm-2 left">
+                        <div class="wwiaftm fingers"></div>
+                      </div>
+                    </div>
+                    <div class="wwiaftm arm-1 right">
+                      <div class="wwiaftm arm-2 right">
+                        <div class="wwiaftm fingers"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -64,15 +108,7 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
+    <!-- Newsletter -->
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}

@@ -284,7 +284,11 @@ ninja.data = [
           {%- capture social_url %}"https://www.zotero.org/{{ social[1] }}"{% endcapture -%}
         {%- else -%}
           {%- assign social_id = "social-" | append: social[0] -%}
-          {%- assign social_title = social[0] | capitalize -%}
+          {%- if social[1].title -%}
+            {%- assign social_title = social[1].title -%}
+          {%- else -%}
+            {%- assign social_title = social[0] | capitalize -%}
+          {%- endif -%}
           {%- capture social_url %}"{{ social[1].url }}"{% endcapture -%}
       {%- endcase -%}
       {
@@ -297,6 +301,20 @@ ninja.data = [
       },
     {%- endfor -%}
   {%- endif -%}
+  {%- for person in site.data.profiles -%}
+    {%- if person.category == 'Alumni' -%}{%- continue -%}{%- endif -%}
+    {
+      {%- assign name = person.name | escape | strip -%}
+      {%- assign name_slug = name | slugify -%}
+      id: "profile-{{ name_slug }}",
+      title: "{{ name }}",
+      description: "{{ person.category | strip_html | strip_newlines | escape | strip }}",
+      section: "Group",
+      handler: () => {
+        window.location.href = "{{ '/group#' | append: name_slug | relative_url }}";
+      },
+    },
+  {%- endfor -%}
   {%- if site.enable_darkmode -%}
     {
       id: 'light-theme',
