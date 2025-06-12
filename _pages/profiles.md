@@ -1,6 +1,8 @@
 ---
 layout: page
 permalink: /group/
+redirect_from:
+  - /people/
 title: group
 description: members of the {{ site.group_alt_name }} at {{ site.institute_name }}
 nav: true

@@ -2,6 +2,8 @@
 layout: about
 title: about
 permalink: /
+redirect_from:
+  - /home/
 subtitle: Associate Professor at <a href='https://www.umontreal.ca/en/'>Université de Montréal</a> ⋅ Core Member of <a href='https://mila.quebec/en'>Mila – Quebec AI Institute</a>
 
 profile:
