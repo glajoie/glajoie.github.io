@@ -9,68 +9,72 @@
       {% endif %}
       <h2 class="{{ title_class }}" id="{{ position | downcase | replace: ' ', '-' }}">{{ position }}</h2>
       {% if position != 'Alumni' %}
-        {% for profile in include.profiles.items %}
-          <hr>
-          <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-            {% if profile.image %}
-              {% assign profile_image_path = profile.image | prepend: 'assets/img/profiles/' %}
-            {% else %}
-              {% assign profile_image_path = 'assets/img/placeholder.jpg' %}
-            {% endif %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
-            {% if profile.more_info %}
-              <div class="more-info">{{ profile.more_info }}</div>
-            {% endif %}
-          </div>
+        <div class="{{ position |  downcase |  replace: ' ', '-' }}-container">
+          {% for profile in include.profiles.items %}
+            <div class="{{ position |  downcase |  replace: ' ', '-' }}-item">
+              <hr>
+              <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/profiles/' %}
+                {% else %}
+                  {% assign profile_image_path = 'assets/img/placeholder.jpg' %}
+                {% endif %}
+                {% if profile.image_circular %}
+                  {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded-circle' %}
+                {% else %}
+                  {% assign profile_image_class = 'profile-img img-fluid z-depth-1 rounded' %}
+                {% endif %}
+                {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
+                {% if profile.more_info %}
+                  <div class="more-info">{{ profile.more_info }}</div>
+                {% endif %}
+              </div>
 
-          <div class="clearfix">
-            <h4 id="{{ profile.name | slugify }}">{{ profile.name }}</h4>
-            {% if profile['co-supervisor'] %}
-              {% assign co-supervisors = profile['co-supervisor'] | split: ' & ' %}
-              <h6>
-                <i
-                  >(co-supervised by
-                  {% for cs in co-supervisors %}
-                    {%- if forloop.first -%}
-                      <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
-                    {%- elsif forloop.last == false -%}
-                      , <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
-                    {%- else -%}
-                      {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
-                    {%- endif -%}
-                  {%- endfor -%}
-                  )</i
-                >
-              </h6>
-            {% elsif group.name == 'Visitors' %}
-              {%- capture supervisor -%}
-                {%- assign supervisors = profile.supervisor | split: " & " -%}
-                {%- for s in supervisors -%}
-                  {%- if forloop.first -%}
-                    <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
-                  {%- elsif forloop.last == false -%}
-                    , <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
-                  {%- else -%}
-                    {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
-                  {%- endif -%}
-                {%- endfor -%}
-              {%- endcapture -%}
-              {%- capture institute -%}<a href="{{ profile.institute.url }}">{{- profile.institute.name -}}</a>{%- endcapture -%}
-              <h6>
-                <i>(supervised by {{ supervisor }} at {{ institute }})</i>
-              </h6>
-            {% endif %}
-            {% if profile.content %}
-              {{ profile.content | markdownify }}
-            {% endif %}
-          </div>
-        {% endfor %}
+              <div class="clearfix">
+                <h4 id="{{ profile.name | slugify }}">{{ profile.name }}</h4>
+                {% if profile['co-supervisor'] %}
+                  {% assign co-supervisors = profile['co-supervisor'] | split: ' & ' %}
+                  <h6>
+                    <i
+                      >(co-supervised by
+                      {% for cs in co-supervisors %}
+                        {%- if forloop.first -%}
+                          <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                        {%- elsif forloop.last == false -%}
+                          , <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                        {%- else -%}
+                          {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                        {%- endif -%}
+                      {%- endfor -%}
+                      )</i
+                    >
+                  </h6>
+                {% elsif group.name == 'Visitors' %}
+                  {%- capture supervisor -%}
+                    {%- assign supervisors = profile.supervisor | split: " & " -%}
+                    {%- for s in supervisors -%}
+                      {%- if forloop.first -%}
+                        <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                      {%- elsif forloop.last == false -%}
+                        , <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                      {%- else -%}
+                        {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endcapture -%}
+                  {%- capture institute -%}<a href="{{ profile.institute.url }}">{{- profile.institute.name -}}</a>{%- endcapture -%}
+                  <h6>
+                    <i>(supervised by {{ supervisor }} at {{ institute }})</i>
+                  </h6>
+                {% endif %}
+                {% if profile.content %}
+                  {{ profile.content | markdownify }}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       {% else %}
         <hr>
         {% assign alumni = include.profiles.items | group_by: 'title' %}
@@ -109,3 +113,15 @@
     {% endif %}
   </article>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.{{ position |  downcase |  replace: ' ', '-' }}-container');
+    var items = Array.from(container.children);
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    };
+    items.forEach(item => container.appendChild(item));
+  });
+</script>
