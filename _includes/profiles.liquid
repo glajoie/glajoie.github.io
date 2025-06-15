@@ -32,7 +32,19 @@
               </div>
 
               <div class="clearfix">
-                <h4 id="{{ profile.name | slugify }}">{{ profile.name }}</h4>
+                <h4 id="{{ profile.name | slugify }}">
+                  {{ profile.name -}}
+                  {%- if profile.website -%}
+                    <span style="display: inline-block; width: 4px;"></span>
+                    <a href="{{ profile.website }}"><i class="fa-xs fa-solid fa-earth-americas"></i></a>
+                  {%- endif %}
+                  {%- if profile['google-scholar'] -%}
+                    <span style="display: inline-block; width: 4px;"></span>
+                    <a href="https://scholar.google.com/citations?user={{ profile.google-scholar }}&view_op=list_works&sortby=pubdate"
+                      ><i class="fa-xs fa-brands fa-google-scholar"></i
+                    ></a>
+                  {%- endif %}
+                </h4>
                 {% if profile['co-supervisor'] %}
                   {% assign co-supervisors = profile['co-supervisor'] | split: ' & ' %}
                   <h6>

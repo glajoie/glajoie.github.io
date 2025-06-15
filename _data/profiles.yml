@@ -2,6 +2,7 @@
   name: Colin Bredenberg
   image: colin.jpg
   co-supervisor: Blake Richards
+  google-scholar: _U-Gw3gAAAAJ
   content: |
     I am a postdoc working in theoretical neuroscience, using mathematical tools from machine learning to understand how learning in the brain works. In particular, I am currently investigating how mice learn, through synaptic plasticity, to control brain-computer interfaces to receive rewards in experimental settings. In my free time, I particularly enjoy creative writing.
 
@@ -9,6 +10,7 @@
   name: Olivier Codol
   image: olivier.jpg
   co-supervisor: Matthew Perich
+  google-scholar: cOqh6rEAAAAJ
   content: |
     I am a post-doctoral researcher in computational neuroscience interested in the algorithmic basis of learning in neural control of movements. Particularly, I focus on fundamental motion such as reaching movements and tabula rasa learning that occurs in infancy, as opposed to sequential and compositional skills that require re-arrangement of pre-acquired movements. I currently work on disentangling which learning rules best match neural dynamics of learning, and what are the most efficient and stable ways to improve performance in complex control problems, including non-linear and over-determined (redundant) control. To that end, I leverage biomechanical modeling, deep recurrent neural networks, and reinforcement learning一particularly policy gradient methods, which are best suited for continuous control problems. My other interests include cinematography, music, watching the London Knights win, and agreeing with Nanda on a variety of important topics.
 
@@ -16,6 +18,8 @@
   name: Roman Pogodin
   image: roman.jpg
   co-supervisor: Blake Richards
+  google-scholar: kLCmh2oAAAAJ
+  website: https://roman-pogodin.com
   content: |
     I'm a postdoc working on models of learning in the brain. I'm interested in deep learning-driven models of plasticity, i.e. building plasticity models and generating experimental predictions using mathematical formalism of artificial neural networks. I also work on representation learning and related topics using kernel methods.
 
@@ -23,6 +27,7 @@
   name: Ryan Vogt
   image: ryan.jpg
   co-supervisor: Numa Dancause
+  google-scholar: P3teu6IAAAAJ
   content: |
     I am a postdoctoral researcher in computational neuroscience interested in the population dynamics of neuronal signals in the brain across different contexts. I develop methods for analyzing the structure of the dynamics in the motor and premotor cortices of non-human primate brains during precision motor tasks. I received my PhD in Applied Mathematics from the University of Washington, for which I characterized the relation between Lyapunov Exponents of RNNs and their performance on and learning of a task. I love to study languages, ride my bike, travel to new countries, and mix cocktails.
 
@@ -30,6 +35,8 @@
   name: Abdel Mfougouon Njupoun
   image: abdel.jpg
   co-supervisor: Blake Richards
+  google-scholar: SwrG9zQAAAAJ
+  website: https://abdelrzk.github.io/abdelnjupoun/
   content: |
     I am a PhD student in Applied Mathematics with a research focus at the intersection of Artificial Intelligence and Neuroscience. I have an interdisciplinary background in Mathematics, Robotics, and Engineering in Robotic Systems. I am passionate about understanding how the brain works and enthusiastic about using mathematics to explore complex systems. I love all kinds of sports, especially soccer. I also love watching documentaries.
 
@@ -37,6 +44,7 @@
   name: Amine Natik
   image: amine.jpg
   co-supervisor: Guy Wolf
+  google-scholar: WbzZ0IwAAAAJ
   content: |
     I'm a PhD student at the University of Montreal & Mila. I completed my MSc in Probability Theory at the University of Ottawa. In my research, I use tools from manifold learning, graph signal processing, representation learning, and dynamical systems. I am also interested in research at the intersection of AI and Neuroscience.
 
@@ -44,12 +52,16 @@
   name: Eric Elmoznino
   image: eric.jpg
   co-supervisor: Yoshua Bengio
+  google-scholar: oiRU44UAAAAJ
+  website: https://ericelmoznino.github.io
   content: |
     I work at the intersection of artificial intelligence and computational neuroscience, and I'm interested in understanding conscious cognition so that we can close the gap between deep learning and the human mind. While current deep neural networks excel in perceptual domains such as vision, they are unable to perform the kind of higher-order reasoning that in humans is associated with conscious, effortful thought. A core hypothesis motivating my work is that conscious representations are simple, discrete, and, most importantly, compositional. My main projects aim to formalize these elusive concepts, better understand how they work in the brain, and develop deep neural network models of them that are loosely inspired by cognitive science.
 
 - category: PhD students
   name: Ezekiel (Zeke) Williams
   image: zeke.jpg
+  google-scholar: KwgL380AAAAJ
+  website: https://computationalcognition.ca
   content: |
     I am an applied math doctoral candidate working to uncover principles underlying learning, memory, and prediction, and how these phenomena arise from electrical dynamics inside the brain. My current work is focused on the role of randomness in neural computation, and how biological cell networks are able to learn even when the information to be learned is spread across long timescales. Given the similarity between models of the brain and AI, my work has some relevance to machine learning. Mathematically, most of my interests lie within dynamical systems theory, probability theory, and statistics. I also enjoy making music, the outdoors, Science for the People, and listening to Rage Against the Machine.
 
@@ -64,6 +76,8 @@
   name: Jean-Pierre Falet
   image: jean-pierre.jpg
   co-supervisor: Yoshua Bengio
+  google-scholar: HlS5MzkAAAAJ
+  website: https://www.jeanpierrefalet.com
   content: |
     I am a PhD student in computer science working on reasoning in AI systems. My research is inspired by our understanding of human cognition, and aims to integrate inductive biases for human-like cognition into AI systems. To achieve this, I leverage tools from probabilistic graphical modeling and GFlowNets. Additionally, I work on the problem of AI safety in highly capable systems, and am interested in AI research ethics and governance. Given that I am also a practicing neurologist with a research background in applied machine learning, I am interested in applying my theoretical contributions to clinical tasks.
 
@@ -71,18 +85,22 @@
   name: Léo Choinière
   image: leo-c.jpg
   co-supervisor: Numa Dancause
+  google-scholar: xZFM7j0AAAAJ
   content: |
     I am a PhD student in neuroscience at Université de Montréal. I am interested in brain-machine interfaces, neural dynamics, and motor control. My main project is aimed at optimizing parameters in the context of neurostimulation in preclinical animal models. In general, my research is situated at the intersection of and requires skills from both experimental and computational neuroscience.
 
 - category: PhD students
   name: Léo Gagnon
   image: leo-g.jpg
+  google-scholar: Ira84zwAAAAJ
   content: |
     I am interested in understanding general learning systems such as LLMs in order to contribute to making them better. Specifically, using ideas from meta-learning, Bayesian statistics and other relevant fields, I study foundational models in controlled settings in search of principles relating their pre-training data, mechanisms and architecture. I also like playing the guitar, spending calories, and asking deep questions.
 
 - category: PhD students
   name: Nanda H Krishna
   image: nanda.jpg
+  google-scholar: OIdDa5kAAAAJ
+  website: https://nandahkrishna.com
   content: |
     I am a PhD student working on problems at the intersection of Computational Neuroscience and Deep Learning. I am specifically interested in developing a theoretical understanding of how learning shapes computation in brains and artificial neural networks. I also work on building foundation models for neuroscience, with the goal of improving decoding in brain-computer interfaces. In my free time, you can find me obsessing over figures, watching cricket, reading comics, or coming up with Korean phrases that annoy Avery.
 
@@ -97,19 +115,23 @@
   name: Sangnie Bhardwaj
   image: sangnie.jpg
   co-supervisor: Hugo Larochelle
+  google-scholar: 0IWgVz4AAAAJ
   content: |
-    I’m a PhD student at UdeM and also a researcher at Google Montreal, where I work on building robust and generalizable image representations. I am interested in achieving this by incorporating principles inspired by visual learning in human brains.
+    I'm a PhD student at UdeM and also a researcher at Google Montreal, where I work on building robust and generalizable image representations. I am interested in achieving this by incorporating principles inspired by visual learning in human brains.
 
 - category: PhD students
   name: Sarthak Mittal
   image: sarthak.jpg
   co-supervisor: Yoshua Bengio
+  google-scholar: FGGgTrcAAAAJ
+  website: https://sarthmit.github.io
   content: |
     I am a PhD student interested in designing unified AI systems that are not constrained to solving a single task but learn general-purpose optimization routines implicitly in their inference mechanism, allowing them to generalize to novel tasks in a few-shot manner. In search of this goal, my explorations revolve around architectural inductive biases and representation learning to encourage compositional computations in Neural Networks as well as generative modeling and Bayesian inference methodologies akin to probabilistic meta-learning setups. A core guiding principle of my work is to efficiently model some crucial invariances underlying a vast majority of tasks, for example optimization procedures, and I believe that leveraging AI systems to model exactly these invariances would lead to few-shot generalization capabilities across novel tasks.
 
 - category: PhD students
   name: Ximeng Mao
   image: ximeng.jpg
+  google-scholar: Q_0TqBgAAAAJ
   content: |
     I am a PhD student in computer science working on machine learning. I am widely interested in applying machine learning and deep learning methods to problems rooted from brain-machine interfaces, and I aim to leverage both deterministic and stochastic models for generic solutions. My current research focuses on meta learning for few-shot adaptation of personalized models and foundation models for neural decoding. My other interests include probabilistic inference, reinforcement learning and medical image analysis.
 
@@ -117,13 +139,17 @@
   name: Avery Hee-Woon Ryoo
   image: avery.jpg
   co-supervisor: Matthew Perich
+  google-scholar: W-kRDPYAAAAJ
+  website: https://averyryoo.github.io
   content: |
-    I am a graduate student passionate about deep generative models, particularly their applications in medicine and science.I aim to use ideas from deep learning, multimodal learning, and dynamical systems theory to design generative frameworks that are faster and more sample-efficient — a crucial step in mitigating the widening resource disparity in an era of increasingly large models. My other interests include neuroprosthetics, in-context learning, the Toronto Raptors, and disagreeing with Nanda on a variety of unimportant topics.
+    I am a graduate student passionate about deep generative models, particularly their applications in medicine and science. I aim to use ideas from deep learning, multimodal learning, and dynamical systems theory to design generative frameworks that are faster and more sample-efficient — a crucial step in mitigating the widening resource disparity in an era of increasingly large models. My other interests include neuroprosthetics, in-context learning, the Toronto Raptors, and disagreeing with Nanda on a variety of unimportant topics.
 
 - category: MSc students
   name: Juan David Guerra
   image: juan.jpg
   co-supervisor: Marco Bonizzato
+  google-scholar: kUk84YwAAAAJ
+  website: https://juandguerra20.github.io
   content: |
     I am an MASc student in Software Engineering interested in the theory and applications of machine learning. My passion lies in developing state-of-the-art learning methods and translating them into impactful tools for healthcare, particularly in the field of neuroscience. I work on optimizing machine learning-driven neurostimulation strategies to support recovery following traumatic spinal cord injury. My current research focuses on the algorithmic development of Gaussian Processes to address the complexity of this problem. Aside from my academic pursuits, I enjoy playing volleyball and exploring a variety of musical instruments.
 
@@ -138,6 +164,8 @@
   name: Tejas Kasetty
   image: tejas.jpg
   co-supervisor: Dhanya Sridhar
+  google-scholar: Tg-bMK0AAAAJ
+  website: https://tejaskasetty.github.io
   content: |
     I am a graduate student in Computer Science interested in understanding higher-order cognition and building AI systems that replicate them. My current research lies at the intersection of information theory, cognitive neuroscience, and deep learning, exploring compression as a unifying principle underlying various functionalities in biological and artificial systems, from perception to abstract reasoning. I am also interested in developing a mathematical framework that links structural motifs in neural connectivity to functionality through the lens of dynamics. Outside of research, I enjoy chess, climbing, snowboarding, and playing football.
 
@@ -155,6 +183,7 @@
   institute:
     name: Champalimaud
     url: https://www.fchampalimaud.org/champalimaud-research
+  google-scholar: r_bQ0pkAAAAJ
   content: |
     I am a visiting PhD student broadly interested in understanding the computational principles underlying flexible and adaptive behavior in neural systems. My current research focuses on developing machine learning methods to identify invariant dynamical structure across diverse neural datasets.
 
