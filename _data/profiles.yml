@@ -1,3 +1,5 @@
+# Postdocs
+
 - category: Postdocs
   name: Colin Bredenberg
   image: colin.jpg
@@ -30,6 +32,8 @@
   google-scholar: P3teu6IAAAAJ
   content: |
     I am a postdoctoral researcher in computational neuroscience interested in the population dynamics of neuronal signals in the brain across different contexts. I develop methods for analyzing the structure of the dynamics in the motor and premotor cortices of non-human primate brains during precision motor tasks. I received my PhD in Applied Mathematics from the University of Washington, for which I characterized the relation between Lyapunov Exponents of RNNs and their performance on and learning of a task. I love to study languages, ride my bike, travel to new countries, and mix cocktails.
+
+# PhD students
 
 - category: PhD students
   name: Abdel Mfougouon Njupoun
@@ -135,6 +139,8 @@
   content: |
     I am a PhD student in computer science working on machine learning. I am widely interested in applying machine learning and deep learning methods to problems rooted from brain-machine interfaces, and I aim to leverage both deterministic and stochastic models for generic solutions. My current research focuses on meta learning for few-shot adaptation of personalized models and foundation models for neural decoding. My other interests include probabilistic inference, reinforcement learning and medical image analysis.
 
+# MSc students
+
 - category: MSc students
   name: Avery Hee-Woon Ryoo
   image: avery.jpg
@@ -169,12 +175,16 @@
   content: |
     I am a graduate student in Computer Science interested in understanding higher-order cognition and building AI systems that replicate them. My current research lies at the intersection of information theory, cognitive neuroscience, and deep learning, exploring compression as a unifying principle underlying various functionalities in biological and artificial systems, from perception to abstract reasoning. I am also interested in developing a mathematical framework that links structural motifs in neural connectivity to functionality through the lens of dynamics. Outside of research, I enjoy chess, climbing, snowboarding, and playing football.
 
+# Undergrads
+
 - category: Undergrads
   name: Skylar Gu
   # image: skylar.jpg
   co-supervisor: Dhanya Sridhar
   content: |
     Incoming!
+
+# Visitors
 
 - category: Visitors
   name: Ayesha Vermani
@@ -187,9 +197,13 @@
   content: |
     I am a visiting PhD student broadly interested in understanding the computational principles underlying flexible and adaptive behavior in neural systems. My current research focuses on developing machine learning methods to identify invariant dynamical structure across diverse neural datasets.
 
+# Alumni
+## Postdocs
+
 - category: Alumni
   name: Alexandre Payeur
   title: Postdoc
+  next: Research Scientist at Mila
 
 - category: Alumni
   name: Maximilian Puelma Touzel
@@ -202,6 +216,8 @@
   title: Postdoc
   co-supervisor: Numa Dancause
 
+## PhD students
+
 - category: Alumni
   name: Laura Suárez
   title: PhD
@@ -211,7 +227,7 @@
 - category: Alumni
   name: Thomas George
   title: PhD
-  next: Orange Innovation
+  next: Researcher at Orange Innovation
   co-supervisor: Pascal Vincent
 
 - category: Alumni
@@ -224,6 +240,8 @@
   title: PhD
   next: Postdoc at Meta
   co-supervisor: Yoshua Bengio
+
+## MSc students
 
 - category: Alumni
   name: Rose Guay-Hottin
@@ -245,10 +263,12 @@
   name: Samuel Laferrière
   title: MSc
 
+## Undergrads
+
 - category: Alumni
-  name: Aude Forcione-Lambert
+  name: Léo Gagnon
   title: Undergrad
-  co-supervisor: Guy Wolf
+  next: PhD student at Mila and UdeM
 
 - category: Alumni
   name: Léo Choinière
@@ -257,7 +277,12 @@
   co-supervisor: Numa Dancause
 
 - category: Alumni
-  name: Léo Gagnon
+  name: Victor Geadah
+  title: Undergrad
+  next: Master's student at Cambridge University
+
+- category: Alumni
+  name: Stefan Horoi
   title: Undergrad
   next: PhD student at Mila and UdeM
 
@@ -267,32 +292,12 @@
   next: MSc student at Imperial College London
 
 - category: Alumni
-  name: Stefan Horoi
+  name: Aude Forcione-Lambert
   title: Undergrad
-  next: PhD student at Mila and UdeM
+  co-supervisor: Guy Wolf
 
-- category: Alumni
-  name: Victor Geadah
-  title: Undergrad
-  next: Master's student at Cambridge University
-
-- category: Alumni
-  name: Colin Bredenberg
-  title: Visiting PhD student
-  next: Postdoc at Mila and UdeM
-  supervisor: Eero Simoncelli & Cristina Savin
-  institute:
-    name: NYU
-    url: https://www.nyu.edu
-
-- category: Alumni
-  name: Ryan Vogt
-  title: Visiting PhD student
-  next: Postdoc at Mila and UdeM
-  supervisor: Eli Shlizerman
-  institute:
-    name: UW
-    url: https://www.washington.edu
+## Visitors
+### PhD students
 
 - category: Alumni
   name: Yuhan Helena Liu
@@ -304,6 +309,26 @@
     url: https://www.washington.edu
 
 - category: Alumni
+  name: Ryan Vogt
+  title: Visiting PhD student
+  next: Postdoc at Mila and UdeM
+  supervisor: Eli Shlizerman
+  institute:
+    name: UW
+    url: https://www.washington.edu
+
+- category: Alumni
+  name: Colin Bredenberg
+  title: Visiting PhD student
+  next: Postdoc at Mila and UdeM
+  supervisor: Eero Simoncelli & Cristina Savin
+  institute:
+    name: NYU
+    url: https://www.nyu.edu
+
+### Undergrads
+
+- category: Alumni
   name: Vivian White
   title: Visiting undergrad
   co-supervisor: Guy Wolf
@@ -312,16 +337,14 @@
     name: WWU
     url: https://www.wwu.edu
 
-- category: Alumni
-  name: Nizar Islah
-  title: Intern with BIOS Health
-
-- category: Alumni
-  name: Olivier Tessier-Larivière
-  title: Intern with BIOS Health
+### Interns
 
 - category: Alumni
   name: Param Raval
+  title: Intern with BIOS Health
+
+- category: Alumni
+  name: Subhrajyoti Dasgupta
   title: Intern with BIOS Health
 
 - category: Alumni
@@ -329,5 +352,9 @@
   title: Intern with BIOS Health
 
 - category: Alumni
-  name: Subhrajyoti Dasgupta
+  name: Nizar Islah
+  title: Intern with BIOS Health
+
+- category: Alumni
+  name: Olivier Tessier-Larivière
   title: Intern with BIOS Health
