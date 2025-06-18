@@ -819,10 +819,14 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          color: var(--global-text-color);
+          border-bottom: 1px dashed var(--global-text-color);
+          transition: none;
 
           &:hover {
+            color: var(--global-theme-color);
             border-bottom-style: solid;
+            border-color: var(--global-theme-color);
             text-decoration: none;
           }
         }

@@ -69,14 +69,14 @@
         {%- endif -%}
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
-        {% if site.data.coauthors[clean_last_name] %}
-          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-            {% if coauthor.firstname contains author.first %}
-              {%- assign coauthor_url = coauthor.url -%}
-              {% break %}
-            {%- endif -%}
-          {% endfor %}
-        {%- endif -%}
+        {%- for profile in site.data.profiles -%}
+          {%- assign profile_last_name = profile.name | split: ' ' | last | downcase | remove_accents -%}
+          {%- assign profile_first_name = profile.name | split: ' ' | first -%}
+          {%- if profile_last_name == clean_last_name and author.first contains profile_first_name and profile.category != 'Alumni' -%}
+            {%- assign coauthor_url = profile.name | slugify | prepend: '/group/#' -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
 
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false -%}
