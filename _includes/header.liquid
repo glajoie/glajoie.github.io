@@ -5,8 +5,14 @@
       {% if page.permalink != '/' %}
         <a class="navbar-brand title" href="{{ site.baseurl }}/">
           {% if page.permalink == '/group/' %}
-            <span class="navbar-brand-bold">{{- site.group_name | split: ' ' | first -}}</span>
-            Group
+            {%- assign group_name = site.group_name[site.active_lang] -%}
+            {%- if site.active_lang == 'fr' -%}
+              {{- group_name | split: ' ' | first }}
+              <span class="navbar-brand-bold">{{ group_name | split: ' ' | last -}}</span>
+            {%- else -%}
+              <span class="navbar-brand-bold">{{- group_name | split: ' ' | first }}</span>
+              {{ group_name | split: ' ' | last -}}
+            {%- endif -%}
           {% elsif site.title == 'blank' %}
             {% if site.first_name %}
               {{- site.first_name -}}
@@ -44,7 +50,7 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+            {% if page.permalink == '/' %} {% assign about_title = page.title | liquify %} {% endif %}
           {% endfor %}
 
           <!-- About -->
@@ -109,7 +115,7 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    {{- p.title | liquify }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -124,6 +130,36 @@
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
               </button>
+            </li>
+          {% endif %}
+          {% if site.languages | length > 1 %}
+            <!-- Language Switcher -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ site.active_lang }}
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                {% for lang in site.languages %}
+                  {% if lang != site.active_lang %}
+                    <a
+                      class="dropdown-item"
+                      {% static_href -%}
+                      href="{% if lang == site.default_lang %}{{ site.baseurl }}{{ page.url }}{% else %}{{ site.baseurl }}/{{ lang }}{{ page.url }}{% endif %}"
+                      {% endstatic_href %}
+                    >
+                      {{ lang }}
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
             </li>
           {% endif %}
           {% if site.enable_darkmode %}

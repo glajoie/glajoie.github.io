@@ -3,8 +3,8 @@ layout: page
 permalink: /group/
 redirect_from:
   - /people/
-title: group
-description: members of the {{ site.group_alt_name }} at {{ site.institute_name }}
+title: "{{ site.data.text.group[site.active_lang].title }}"
+description: "{{ site.data.text.group[site.active_lang].description }}"
 nav: true
 nav_order: 1
 ---

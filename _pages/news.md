@@ -1,6 +1,6 @@
 ---
 layout: page
-title: news
+title: "{{ site.data.text.news[site.active_lang].title }}"
 permalink: /news/
 ---
 

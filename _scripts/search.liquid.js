@@ -7,7 +7,7 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [
   {%- for page in site.pages -%}
-    {%- if page.permalink == '/' -%}{%- assign about_title = page.title | strip -%}{%- endif -%}
+    {%- if page.permalink == '/' -%}{%- assign about_title = page.title | liquify | strip -%}{%- endif -%}
   {%- endfor -%}
   {
     id: "nav-{{ about_title | slugify }}",
@@ -24,7 +24,7 @@ ninja.data = [
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
             {
-              {%- assign title = child.title | escape | strip -%}
+              {%- assign title = child.title | liquify | escape | strip -%}
               {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.permalink -%}{%- endif -%}
               id: "dropdown-{{ title | slugify }}",
               title: "{{ title | truncatewords: 13 }}",
@@ -39,7 +39,7 @@ ninja.data = [
 
       {%- else -%}
         {
-          {%- assign title = p.title | escape | strip -%}
+          {%- assign title = p.title | liquify | escape | strip -%}
           {%- if p.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = p.url -%}{%- endif -%}
           id: "nav-{{ title | slugify }}",
           title: "{{ title | truncatewords: 13 }}",
