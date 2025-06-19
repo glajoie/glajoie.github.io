@@ -88,7 +88,13 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ site.data.text.news[site.active_lang].title }}</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">
+          {%- if site.active_lang == 'fr' -%}
+            nouvelles
+          {%- else -%}
+            news
+          {%- endif -%}
+        </a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}

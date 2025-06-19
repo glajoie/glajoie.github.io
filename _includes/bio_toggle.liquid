@@ -87,7 +87,8 @@
     }
   </script>
   <a id="about-bio-toggle" class="btn" role="button" onclick="bioToggle()"
-    ><i class="fa fa-user-tie"></i>&nbsp;&nbsp;{{ site.data.text.about[site.active_lang]['bio-toggle'] -}}
+    ><i class="fa fa-user-tie"></i>&nbsp;&nbsp;
+    {%- if site.active_lang == 'fr' -%}Cliquez ici pour une biographie formelle{%- else -%}Click here for a formal bio{%- endif -%}
   </a>
   <a id="about-bio-easter-egg" class="btn d-none" role="button"><i class="fa fa-dice"></i></a>
 </div>

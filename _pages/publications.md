@@ -1,8 +1,13 @@
 ---
 layout: page
 permalink: /publications/
-title: "{{ site.data.text.publications[site.active_lang].title }}"
-description: "{{ site.data.text.publications[site.active_lang].description }}"
+title: publications
+description: >
+  {%- if site.active_lang == "fr" -%}
+    liste de publications en ordre chronologique inversé
+  {%- else -%}
+    list of publications in reversed chronological order
+  {%- endif -%}
 nav: true
 nav_order: 2
 ---

@@ -1,6 +1,11 @@
 ---
 layout: page
-title: "{{ site.data.text.news[site.active_lang].title }}"
+title: >
+  {%- if site.active_lang == "fr" -%}
+    nouvelles
+  {%- else -%}
+    news
+  {%- endif -%}
 permalink: /news/
 ---
 

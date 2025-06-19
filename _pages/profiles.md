@@ -3,8 +3,18 @@ layout: page
 permalink: /group/
 redirect_from:
   - /people/
-title: "{{ site.data.text.group[site.active_lang].title }}"
-description: "{{ site.data.text.group[site.active_lang].description }}"
+title: >
+  {%- if site.active_lang == "fr" -%}
+    groupe
+  {%- else -%}
+    group
+  {%- endif -%}
+description: >
+  {%- if site.active_lang == "fr" -%}
+    membres du groupe de recherche en calculs neuronaux au Mila
+  {%- else -%}
+    members of the Neural Computations Research Group at Mila
+  {%- endif -%}
 nav: true
 nav_order: 1
 ---

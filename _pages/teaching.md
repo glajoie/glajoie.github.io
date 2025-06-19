@@ -1,8 +1,18 @@
 ---
 layout: page
 permalink: /teaching/
-title: "{{ site.data.text.teaching[site.active_lang].title }}"
-description: "{{ site.data.text.teaching[site.active_lang].description }}"
+title: >
+  {%- if site.active_lang == "fr" -%}
+    cours
+  {%- else -%}
+    teaching
+  {%- endif -%}
+description: >
+  {%- if site.active_lang == "fr" -%}
+    cours enseignés à l'UdeM et liens vers les matériaux
+  {%- else -%}
+    courses taught at UdeM and links to materials
+  {%- endif -%}
 nav: true
 nav_order: 3
 ---
@@ -22,6 +32,7 @@ nav_order: 3
 #### MAT1720: Probabilities
 
 **Last edition:** Summer 2018
+
 {% else %}
 
 #### MAT6215: Systèmes dynamiques
@@ -37,4 +48,5 @@ nav_order: 3
 #### MAT1720: Probabilités
 
 **Dernière édition :** Été 2018
+
 {% endif %}
