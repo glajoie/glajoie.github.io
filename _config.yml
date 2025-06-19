@@ -27,6 +27,7 @@ exclude_from_localization:
   - _pages/404.md
   - _pages/sitemap.xml
   - _pages/robots.txt
+parallel_localization: false
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://guillaumelajoie.com # the base hostname & protocol for your site
