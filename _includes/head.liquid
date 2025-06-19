@@ -68,6 +68,8 @@
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<link rel="alternate" lang="en" {% static_href %} href="{{ page.permalink | absolute_url }}" {% endstatic_href %}>
+<link rel="alternate" lang="fr" {% static_href %} href="{{ page.permalink |  prepend: '/fr'  | absolute_url }}" {% endstatic_href %}>
 
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>

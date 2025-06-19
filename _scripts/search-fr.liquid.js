@@ -1,5 +1,5 @@
 ---
-permalink: /assets/js/search-data.js
+permalink: /assets/js/search-data-fr.js
 ---
 // get the ninja-keys element
 const ninja = document.querySelector('ninja-keys');
@@ -14,7 +14,7 @@ ninja.data = [
     title: "{{ about_title | truncatewords: 13 }}",
     section: "Navigation",
     handler: () => {
-      window.location.href = "{{ '/' | relative_url }}";
+      window.location.href = "{{ '/fr' | relative_url }}";
     },
   },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
@@ -31,7 +31,7 @@ ninja.data = [
               description: "{{ child.description | strip_html | strip_newlines | escape | strip }}",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "{{ url | relative_url }}";
+                window.location.href = "{{ url | prepend: '/fr' | relative_url }}";
               },
             },
           {%- endunless -%}
@@ -46,7 +46,7 @@ ninja.data = [
           description: "{{ p.description | strip_html | strip_newlines | escape | strip }}",
           section: "Navigation",
           handler: () => {
-            window.location.href = "{{ url | relative_url }}";
+            window.location.href = "{{ url | prepend: '/fr' | relative_url }}";
           },
         },
       {%- endif -%}
@@ -65,14 +65,14 @@ ninja.data = [
           title: "{{ title | truncatewords: 13 }}".replace(/:([a-zA-Z0-9_+-]+):/g, ""),
         {% endif %}
         description: "{{ post.description | strip_html | strip_newlines | escape | strip }}",
-        section: "Posts",
+        section: "Articles",
         handler: () => {
           {% if post.redirect == blank %}
-            window.location.href = "{{ post.url | relative_url }}";
+            window.location.href = "{{ post.url | prepend: '/fr' | relative_url }}";
           {% elsif post.redirect contains '://' %}
             window.open("{{ post.redirect }}", "_blank");
           {% else %}
-            window.location.href = "{{ post.redirect | relative_url }}";
+            window.location.href = "{{ post.redirect | prepend: '/fr' | relative_url }}";
           {% endif %}
         },
       },
@@ -309,36 +309,36 @@ ninja.data = [
       id: "profile-{{ name_slug }}",
       title: "{{ name }}",
       description: "{{ person.category | strip_html | strip_newlines | escape | strip }}",
-      section: "Group",
+      section: "Groupe",
       handler: () => {
-        window.location.href = "{{ '/group#' | append: name_slug | relative_url }}";
+        window.location.href = "{{ '/group#' | append: name_slug | prepend: '/fr' | relative_url }}";
       },
     },
   {%- endfor -%}
   {%- if site.enable_darkmode -%}
     {
       id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
+      title: 'Changer le thème en clair',
+      description: 'Changer le thème du site en clair',
+      section: 'Thème',
       handler: () => {
         setThemeSetting("light");
       },
     },
     {
       id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
+      title: 'Changer le thème en sombre',
+      description: 'Changer le thème du site en sombre',
+      section: 'Thème',
       handler: () => {
         setThemeSetting("dark");
       },
     },
     {
       id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
+      title: 'Utiliser le thème par défaut du système',
+      description: 'Changer le thème du site selon le système par défaut',
+      section: 'Thème',
       handler: () => {
         setThemeSetting("system");
       },

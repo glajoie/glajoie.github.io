@@ -1,10 +1,14 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.active_lang }}">
   <!-- Head -->
   <head>
     {% if page.redirect %}
       {% if page.redirect == true %}
-        {% assign redirect = site.baseurl | append: '/' %}
+        {% if site.active_lang == site.default_lang %}
+          {% assign redirect = site.baseurl | append: '/' %}
+        {% else %}
+          {% assign redirect = site.baseurl | append: '/' | append: site.active_lang %}
+        {% endif %}
       {% elsif page.redirect contains '://' %}
         {% assign redirect = page.redirect %}
       {% else %}

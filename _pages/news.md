@@ -1,6 +1,11 @@
 ---
 layout: page
-title: news
+title: >
+  {%- if site.active_lang == "fr" -%}
+    nouvelles
+  {%- else -%}
+    news
+  {%- endif -%}
 permalink: /news/
 ---
 

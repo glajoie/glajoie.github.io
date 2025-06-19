@@ -2,7 +2,12 @@
 layout: page
 permalink: /fun/
 title: fun
-description: pictures from group retreats and mountaineering adventures
+description: >
+  {%- if site.active_lang == 'fr' -%}
+    photos des retraites de groupe et des aventures d'alpinisme
+  {%- else -%}
+    pictures from group retreats and mountaineering adventures
+  {%- endif -%}
 nav: true
 nav_order: 4
 ---

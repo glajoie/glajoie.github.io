@@ -12,7 +12,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc">{{ page.subtitle | liquify }}</p>
   </header>
 
   <article>
@@ -88,7 +88,13 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">
+          {%- if site.active_lang == 'fr' -%}
+            nouvelles
+          {%- else -%}
+            news
+          {%- endif -%}
+        </a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
