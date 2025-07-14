@@ -43,6 +43,9 @@ ninja.data = [{
           section: "News",},{id: "news-congratulations-to-dr-françois-paugam-for-successfully-defending-his-phd-thesis-mortar-board",
           title: 'Congratulations to Dr. François Paugam for successfully defending his PhD thesis! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
+          section: "News",},{id: "news-roman-starts-as-a-research-scientist-at-google-in-the-paradigms-of-intelligence-team-he-ll-still-join-us-for-friday-drinks-though-beers",
+          title: 'Roman starts as a Research Scientist at Google, in the Paradigms of Intelligence...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
@@ -98,13 +101,6 @@ ninja.data = [{
       section: "Group",
       handler: () => {
         window.location.href = "/group#olivier-codol";
-      },
-    },{id: "profile-roman-pogodin",
-      title: "Roman Pogodin",
-      description: "Postdocs",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#roman-pogodin";
       },
     },{id: "profile-ryan-vogt",
       title: "Ryan Vogt",
