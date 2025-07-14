@@ -17,15 +17,6 @@
     I am a post-doctoral researcher in computational neuroscience interested in the algorithmic basis of learning in neural control of movements. Particularly, I focus on fundamental motion such as reaching movements and tabula rasa learning that occurs in infancy, as opposed to sequential and compositional skills that require re-arrangement of pre-acquired movements. I currently work on disentangling which learning rules best match neural dynamics of learning, and what are the most efficient and stable ways to improve performance in complex control problems, including non-linear and over-determined (redundant) control. To that end, I leverage biomechanical modeling, deep recurrent neural networks, and reinforcement learning一particularly policy gradient methods, which are best suited for continuous control problems. My other interests include cinematography, music, watching the London Knights win, and agreeing with Nanda on a variety of important topics.
 
 - category: Postdocs
-  name: Roman Pogodin
-  image: roman.jpg
-  co-supervisor: Blake Richards
-  google-scholar: kLCmh2oAAAAJ
-  website: https://roman-pogodin.com
-  content: |
-    I'm a postdoc working on models of learning in the brain. I'm interested in deep learning-driven models of plasticity, i.e. building plasticity models and generating experimental predictions using mathematical formalism of artificial neural networks. I also work on representation learning and related topics using kernel methods.
-
-- category: Postdocs
   name: Ryan Vogt
   image: ryan.jpg
   co-supervisor: Numa Dancause
@@ -199,6 +190,11 @@
 
 # Alumni
 ## Postdocs
+
+- category: Alumni
+  name: Roman Pogodin
+  title: Postdoc
+  next: Research Scientist at Google (Paradigms of Intelligence Team)
 
 - category: Alumni
   name: Alexandre Payeur
