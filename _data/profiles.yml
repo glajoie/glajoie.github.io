@@ -9,14 +9,6 @@
     I am a postdoc working in theoretical neuroscience, using mathematical tools from machine learning to understand how learning in the brain works. In particular, I am currently investigating how mice learn, through synaptic plasticity, to control brain-computer interfaces to receive rewards in experimental settings. In my free time, I particularly enjoy creative writing.
 
 - category: Postdocs
-  name: Olivier Codol
-  image: olivier.jpg
-  co-supervisor: Matthew Perich
-  google-scholar: cOqh6rEAAAAJ
-  content: |
-    I am a post-doctoral researcher in computational neuroscience interested in the algorithmic basis of learning in neural control of movements. Particularly, I focus on fundamental motion such as reaching movements and tabula rasa learning that occurs in infancy, as opposed to sequential and compositional skills that require re-arrangement of pre-acquired movements. I currently work on disentangling which learning rules best match neural dynamics of learning, and what are the most efficient and stable ways to improve performance in complex control problems, including non-linear and over-determined (redundant) control. To that end, I leverage biomechanical modeling, deep recurrent neural networks, and reinforcement learning一particularly policy gradient methods, which are best suited for continuous control problems. My other interests include cinematography, music, watching the London Knights win, and agreeing with Nanda on a variety of important topics.
-
-- category: Postdocs
   name: Ryan Vogt
   image: ryan.jpg
   co-supervisor: Numa Dancause
@@ -44,6 +36,15 @@
     I'm a PhD student at the University of Montreal & Mila. I completed my MSc in Probability Theory at the University of Ottawa. In my research, I use tools from manifold learning, graph signal processing, representation learning, and dynamical systems. I am also interested in research at the intersection of AI and Neuroscience.
 
 - category: PhD students
+  name: Avery Hee-Woon Ryoo
+  image: avery.jpg
+  co-supervisor: Matthew Perich
+  google-scholar: W-kRDPYAAAAJ
+  website: https://averyryoo.github.io
+  content: |
+    I am a graduate student passionate about deep generative models, particularly their applications in medicine and science. I aim to use ideas from deep learning, multimodal learning, and dynamical systems theory to design generative frameworks that are faster and more sample-efficient — a crucial step in mitigating the widening resource disparity in an era of increasingly large models. My other interests include neuroprosthetics, in-context learning, the Toronto Raptors, and disagreeing with Nanda on a variety of unimportant topics.
+
+- category: PhD students
   name: Eric Elmoznino
   image: eric.jpg
   co-supervisor: Yoshua Bengio
@@ -59,13 +60,6 @@
   website: https://computationalcognition.ca
   content: |
     I am an applied math doctoral candidate working to uncover principles underlying learning, memory, and prediction, and how these phenomena arise from electrical dynamics inside the brain. My current work is focused on the role of randomness in neural computation, and how biological cell networks are able to learn even when the information to be learned is spread across long timescales. Given the similarity between models of the brain and AI, my work has some relevance to machine learning. Mathematically, most of my interests lie within dynamical systems theory, probability theory, and statistics. I also enjoy making music, the outdoors, Science for the People, and listening to Rage Against the Machine.
-
-- category: PhD students
-  name: François Paugam
-  image: francois.jpg
-  co-supervisor: Lune Bellec
-  content: |
-    I am a PhD student in computer science. My main research interest is to explore techniques to incorporate brain imaging data in the training of deep neural networks as a way to make the resulting artificial agents more human-like in their behavior and in particular to improve their generalizability to new contexts.
 
 - category: PhD students
   name: Jean-Pierre Falet
@@ -133,15 +127,6 @@
 # MSc students
 
 - category: MSc students
-  name: Avery Hee-Woon Ryoo
-  image: avery.jpg
-  co-supervisor: Matthew Perich
-  google-scholar: W-kRDPYAAAAJ
-  website: https://averyryoo.github.io
-  content: |
-    I am a graduate student passionate about deep generative models, particularly their applications in medicine and science. I aim to use ideas from deep learning, multimodal learning, and dynamical systems theory to design generative frameworks that are faster and more sample-efficient — a crucial step in mitigating the widening resource disparity in an era of increasingly large models. My other interests include neuroprosthetics, in-context learning, the Toronto Raptors, and disagreeing with Nanda on a variety of unimportant topics.
-
-- category: MSc students
   name: Juan David Guerra
   image: juan.jpg
   co-supervisor: Marco Bonizzato
@@ -192,6 +177,12 @@
 ## Postdocs
 
 - category: Alumni
+  name: Olivier Codol
+  title: Postdoc
+  next: Research Scientist at Meta Reality Labs
+  co-supervisor: Matthew Perich
+
+- category: Alumni
   name: Roman Pogodin
   title: Postdoc
   next: Research Scientist at Google (Paradigms of Intelligence Team)
@@ -213,6 +204,11 @@
   co-supervisor: Numa Dancause
 
 ## PhD students
+
+- category: Alumni
+  name: François Paugam
+  title: PhD
+  co-supervisor: Lune Bellec
 
 - category: Alumni
   name: Laura Suárez
