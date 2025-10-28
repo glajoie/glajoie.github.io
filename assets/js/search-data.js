@@ -46,6 +46,9 @@ ninja.data = [{
           section: "News",},{id: "news-roman-starts-as-a-research-scientist-at-google-in-the-paradigms-of-intelligence-team-he-ll-still-join-us-for-friday-drinks-though-beers",
           title: 'Roman starts as a Research Scientist at Google, in the Paradigms of Intelligence...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
+          section: "News",},{id: "news-olivier-starts-as-a-research-scientist-at-meta-reality-labs-nyc-we-ll-miss-having-him-here-city-sunset",
+          title: 'Olivier starts as a Research Scientist at Meta Reality Labs, NYC. We’ll miss...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
@@ -95,13 +98,6 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#colin-bredenberg";
       },
-    },{id: "profile-olivier-codol",
-      title: "Olivier Codol",
-      description: "Postdocs",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#olivier-codol";
-      },
     },{id: "profile-ryan-vogt",
       title: "Ryan Vogt",
       description: "Postdocs",
@@ -123,6 +119,13 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#amine-natik";
       },
+    },{id: "profile-avery-hee-woon-ryoo",
+      title: "Avery Hee-Woon Ryoo",
+      description: "PhD students",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#avery-hee-woon-ryoo";
+      },
     },{id: "profile-eric-elmoznino",
       title: "Eric Elmoznino",
       description: "PhD students",
@@ -136,13 +139,6 @@ ninja.data = [{
       section: "Group",
       handler: () => {
         window.location.href = "/group#ezekiel-zeke-williams";
-      },
-    },{id: "profile-françois-paugam",
-      title: "François Paugam",
-      description: "PhD students",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#fran%C3%A7ois-paugam";
       },
     },{id: "profile-jean-pierre-falet",
       title: "Jean-Pierre Falet",
@@ -199,13 +195,6 @@ ninja.data = [{
       section: "Group",
       handler: () => {
         window.location.href = "/group#ximeng-mao";
-      },
-    },{id: "profile-avery-hee-woon-ryoo",
-      title: "Avery Hee-Woon Ryoo",
-      description: "MSc students",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#avery-hee-woon-ryoo";
       },
     },{id: "profile-juan-david-guerra",
       title: "Juan David Guerra",
