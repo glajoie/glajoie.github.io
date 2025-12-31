@@ -6,18 +6,28 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Guillaume
 middle_name:
 last_name: Lajoie
-group_name: Lajoie Group
-group_alt_name: Neural Computations Research Group
-institute_name: Mila
-university_name: UdeM
+group_name:
+  en: Lajoie Group
+  fr: Groupe Lajoie
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website of Guillaume Lajoie, Associate Professor at UdeM and Core Member of Mila.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+footer_text:
+  en: >
+    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+    Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+  fr: >
+    Site web créé avec <a href="https://jekyllrb.com/">Jekyll</a> et le thème <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+    Hébergé par <a href="https://pages.github.com/">GitHub Pages</a>.
 keywords: guillaume-lajoie, guillaume, lajoie, neuroscience, ai, neuro-ai, bci, brain-computer-interfaces, udem, mila # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+languages: ["en", "fr"]
+default_lang: en
+exclude_from_localization:
+  - _pages/404.md
+  - _pages/sitemap.xml
+  - _pages/robots.txt
+parallel_localization: false
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://guillaumelajoie.com # the base hostname & protocol for your site
@@ -44,7 +54,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -67,8 +77,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -171,30 +181,22 @@ keep_files:
 plugins:
   - jekyll-archives-v2
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
   - jekyll-link-attributes
+  - jekyll-liquify
   - jekyll-minifier
   - jekyll-paginate-v2
+  - jekyll-polyglot
   - jekyll-redirect-from
   - jekyll-regex-replace
   - jekyll/scholar
-  - jekyll-sitemap
   - jekyll-tabs
   - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
-  - jekyll-liquify
   - jemoji
-
-# Sitemap settings
-defaults:
-  - scope:
-      path: "assets"
-    values:
-      sitemap: true
 
 sass:
   style: compressed

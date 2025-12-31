@@ -128,8 +128,6 @@ GEM
       activesupport
       jekyll (>= 3.6, < 5.0)
     jekyll-email-protect (1.1.0)
-    jekyll-feed (0.17.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-get-json (1.0.0)
       deep_merge (~> 1.2)
       jekyll (>= 3.0)
@@ -152,6 +150,8 @@ GEM
       uglifier (~> 4.1)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
+    jekyll-polyglot (1.9.0)
+      jekyll (>= 4.0, >= 3.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-regex-replace (1.1.0)
@@ -162,8 +162,6 @@ GEM
       citeproc-ruby (~> 1.0)
       csl-styles (~> 1.0)
       jekyll (~> 4.0)
-    jekyll-sitemap (1.4.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-tabs (1.2.1)
       jekyll (>= 3.0, < 5.0)
     jekyll-toc (0.19.0)
@@ -289,7 +287,6 @@ DEPENDENCIES
   jekyll
   jekyll-archives-v2
   jekyll-email-protect
-  jekyll-feed
   jekyll-get-json
   jekyll-imagemagick
   jekyll-jupyter-notebook
@@ -297,10 +294,10 @@ DEPENDENCIES
   jekyll-liquify
   jekyll-minifier
   jekyll-paginate-v2
+  jekyll-polyglot
   jekyll-redirect-from
   jekyll-regex-replace
   jekyll-scholar
-  jekyll-sitemap
   jekyll-tabs
   jekyll-terser!
   jekyll-toc

@@ -297,6 +297,7 @@ ul.profile-list {
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
+  min-width: 3.75rem;
 
   a:not(.active) {
     color: var(--global-text-color);
@@ -313,6 +314,7 @@ ul.profile-list {
 
 .dropdown-item {
   color: var(--global-text-color);
+  text-align: center;
 
   &:hover {
     color: var(--global-hover-color);

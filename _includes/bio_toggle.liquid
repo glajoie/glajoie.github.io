@@ -13,8 +13,9 @@
         let tempBioToggle = bioToggle.innerHTML;
         bio.innerHTML = bioAlt.innerHTML;
         bioAlt.innerHTML = tempBio;
-        if (tempBioToggle.includes('informal')) {
-            tempBioToggle = tempBioToggle.replace('an informal', 'a formal')
+        if (tempBioToggle.includes('inform')) {
+            tempBioToggle = tempBioToggle.replace('inform', 'form');
+            tempBioToggle = tempBioToggle.replace(' an ', ' a ');
             tempBioToggle = tempBioToggle.replace('fa-user-secret', 'fa-user-tie');
             let easterEgg = document.getElementById('about-bio-easter-egg');
             if (easterEgg) {
@@ -27,7 +28,8 @@
                 gif.classList.add('d-none');
             }
         } else {
-            tempBioToggle = tempBioToggle.replace('a formal', 'an informal');
+            tempBioToggle = tempBioToggle.replace(' form', ' inform');
+            tempBioToggle = tempBioToggle.replace(' a ', ' an ');
             tempBioToggle = tempBioToggle.replace('fa-user-tie', 'fa-user-secret');
             {% if include.easter-eggs %}
             let easterEgg = document.getElementById('about-bio-easter-egg');
@@ -84,6 +86,9 @@
         bioToggle.innerHTML = tempBioToggle;
     }
   </script>
-  <a id="about-bio-toggle" class="btn" role="button" onclick="bioToggle()"><i class="fa fa-user-tie"></i>&nbsp;&nbsp;Click here for a formal bio</a>
+  <a id="about-bio-toggle" class="btn" role="button" onclick="bioToggle()"
+    ><i class="fa fa-user-tie"></i>&nbsp;&nbsp;
+    {%- if site.active_lang == 'fr' -%}Cliquez ici pour une biographie formelle{%- else -%}Click here for a formal bio{%- endif -%}
+  </a>
   <a id="about-bio-easter-egg" class="btn d-none" role="button"><i class="fa fa-dice"></i></a>
 </div>
