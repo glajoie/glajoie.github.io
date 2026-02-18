@@ -143,13 +143,6 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#ezekiel-zeke-williams";
       },
-    },{id: "profile-jean-pierre-falet",
-      title: "Jean-Pierre Falet",
-      description: "PhD students",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#jean-pierre-falet";
-      },
     },{id: "profile-léo-choinière",
       title: "Léo Choinière",
       description: "PhD students",
