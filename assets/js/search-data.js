@@ -40,14 +40,17 @@ ninja.data = [{
         },{id: "news-as-we-welcome-spring-the-group-s-website-has-finally-been-updated-seedling-cherry-blossom",
           title: 'As we welcome spring, the group’s website has finally been updated! :seedling: :cherry_blossom:...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
-          section: "News",},{id: "news-congratulations-to-dr-françois-paugam-for-successfully-defending-his-phd-thesis-mortar-board",
-          title: 'Congratulations to Dr. François Paugam for successfully defending his PhD thesis! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          section: "News",},{id: "news-congratulations-to-françois-paugam-for-successfully-defending-his-phd-thesis-mortar-board",
+          title: 'Congratulations to François Paugam for successfully defending his PhD thesis! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
           section: "News",},{id: "news-roman-starts-as-a-research-scientist-at-google-in-the-paradigms-of-intelligence-team-he-ll-still-join-us-for-friday-drinks-though-beers",
           title: 'Roman starts as a Research Scientist at Google, in the Paradigms of Intelligence...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
           section: "News",},{id: "news-olivier-starts-as-a-research-scientist-at-meta-reality-labs-nyc-we-ll-miss-having-him-here-city-sunset",
           title: 'Olivier starts as a Research Scientist at Meta Reality Labs, NYC. We’ll miss...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
+          section: "News",},{id: "news-congratulations-to-amine-natik-for-successfully-defending-his-phd-thesis-mortar-board",
+          title: 'Congratulations to Amine Natik for successfully defending his PhD thesis! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
           section: "News",},{
         id: 'social-email',
@@ -105,19 +108,19 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#ryan-vogt";
       },
+    },{id: "profile-tom-george",
+      title: "Tom George",
+      description: "Postdocs",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#tom-george";
+      },
     },{id: "profile-abdel-mfougouon-njupoun",
       title: "Abdel Mfougouon Njupoun",
       description: "PhD students",
       section: "Group",
       handler: () => {
         window.location.href = "/group#abdel-mfougouon-njupoun";
-      },
-    },{id: "profile-amine-natik",
-      title: "Amine Natik",
-      description: "PhD students",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#amine-natik";
       },
     },{id: "profile-avery-hee-woon-ryoo",
       title: "Avery Hee-Woon Ryoo",
@@ -167,6 +170,13 @@ ninja.data = [{
       section: "Group",
       handler: () => {
         window.location.href = "/group#nanda-h-krishna";
+      },
+    },{id: "profile-pingsheng-li",
+      title: "Pingsheng Li",
+      description: "PhD students",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#pingsheng-li";
       },
     },{id: "profile-pravish-sainath",
       title: "Pravish Sainath",
@@ -223,13 +233,6 @@ ninja.data = [{
       section: "Group",
       handler: () => {
         window.location.href = "/group#skylar-gu";
-      },
-    },{id: "profile-ayesha-vermani",
-      title: "Ayesha Vermani",
-      description: "Visitors",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#ayesha-vermani";
       },
     },{
       id: 'light-theme',
