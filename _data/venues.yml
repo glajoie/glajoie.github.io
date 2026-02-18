@@ -81,6 +81,10 @@
   url: https://journals.plos.org/ploscompbiol/
   color: "#08573b"
 
+"STAR Protocols":
+  url: https://www.cell.com/star-protocols/home
+  color: "#08573b"
+
 "TMLR":
   url: https://jmlr.org/tmlr/
   color: "#08573b"
