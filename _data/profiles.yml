@@ -16,6 +16,14 @@
   content: |
     I am a postdoctoral researcher in computational neuroscience interested in the population dynamics of neuronal signals in the brain across different contexts. I develop methods for analyzing the structure of the dynamics in the motor and premotor cortices of non-human primate brains during precision motor tasks. I received my PhD in Applied Mathematics from the University of Washington, for which I characterized the relation between Lyapunov Exponents of RNNs and their performance on and learning of a task. I love to study languages, ride my bike, travel to new countries, and mix cocktails.
 
+- category: Postdocs
+  name: Tom George
+  # image: tom.jpg
+  co-supervisor: Blake Richards
+  google-scholar: AG49j3MAAAAJ
+  content: |
+    Incoming!
+
 # PhD students
 
 - category: PhD students
@@ -26,14 +34,6 @@
   website: https://abdelrzk.github.io/abdelnjupoun/
   content: |
     I am a PhD student in Applied Mathematics with a research focus at the intersection of Artificial Intelligence and Neuroscience. I have an interdisciplinary background in Mathematics, Robotics, and Engineering in Robotic Systems. I am passionate about understanding how the brain works and enthusiastic about using mathematics to explore complex systems. I love all kinds of sports, especially soccer. I also love watching documentaries.
-
-- category: PhD students
-  name: Amine Natik
-  image: amine.jpg
-  co-supervisor: Guy Wolf
-  google-scholar: WbzZ0IwAAAAJ
-  content: |
-    I'm a PhD student at the University of Montreal & Mila. I completed my MSc in Probability Theory at the University of Ottawa. In my research, I use tools from manifold learning, graph signal processing, representation learning, and dynamical systems. I am also interested in research at the intersection of AI and Neuroscience.
 
 - category: PhD students
   name: Avery Hee-Woon Ryoo
@@ -92,6 +92,14 @@
   website: https://nandahkrishna.com
   content: |
     I am a PhD student working on problems at the intersection of Computational Neuroscience and Deep Learning. I am specifically interested in developing a theoretical understanding of how learning shapes computation in brains and artificial neural networks. I also work on building foundation models for neuroscience, with the goal of improving decoding in brain-computer interfaces. In my free time, you can find me obsessing over figures, watching cricket, reading comics, or coming up with Korean phrases that annoy Avery.
+
+- category: PhD students
+  name: Pingsheng Li
+  # image: pingsheng.jpg
+  co-supervisor: Blake Richards
+  google-scholar: Xd8kzPgAAAAJ
+  content: |
+    Incoming!
 
 - category: PhD students
   name: Pravish Sainath
@@ -162,16 +170,6 @@
 
 # Visitors
 
-- category: Visitors
-  name: Ayesha Vermani
-  image: ayesha.jpg
-  supervisor: Il Memming Park
-  institute:
-    name: Champalimaud
-    url: https://www.fchampalimaud.org/champalimaud-research
-  google-scholar: r_bQ0pkAAAAJ
-  content: |
-    I am a visiting PhD student broadly interested in understanding the computational principles underlying flexible and adaptive behavior in neural systems. My current research focuses on developing machine learning methods to identify invariant dynamical structure across diverse neural datasets.
 
 # Alumni
 ## Postdocs
@@ -186,6 +184,7 @@
   name: Roman Pogodin
   title: Postdoc
   next: Research Scientist at Google (Paradigms of Intelligence Team)
+  co-supervisor: Blake Richards
 
 - category: Alumni
   name: Alexandre Payeur
@@ -204,6 +203,12 @@
   co-supervisor: Numa Dancause
 
 ## PhD students
+
+- category: Alumni
+  name: Amine Natik
+  title: PhD
+  next: Quantitative Analyst at Constellation
+  co-supervisor: Guy Wolf
 
 - category: Alumni
   name: François Paugam
@@ -290,6 +295,14 @@
 
 ## Visitors
 ### PhD students
+
+- category: Alumni
+  name: Ayesha Vermani
+  title: Visiting PhD student
+  supervisor: Il Memming Park
+  institute:
+    name: Champalimaud
+    url: https://www.fchampalimaud.org/champalimaud-research
 
 - category: Alumni
   name: Yuhan Helena Liu

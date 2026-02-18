@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations to Dr. François Paugam for successfully defending his PhD thesis! :mortar_board:
+Congratulations to François Paugam for successfully defending his PhD thesis! :mortar_board:
