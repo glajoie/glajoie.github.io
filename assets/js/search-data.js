@@ -227,6 +227,13 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#skylar-gu";
       },
+    },{id: "profile-mathys-loiselle",
+      title: "Mathys Loiselle",
+      description: "Undergrads",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#mathys-loiselle";
+      },
     },{
       id: 'light-theme',
       title: 'Change theme to light',
