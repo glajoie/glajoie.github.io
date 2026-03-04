@@ -1,0 +1,98 @@
+nav:
+  about: "accueil"
+  group: "groupe"
+  publications: "publications"
+  teaching: "enseignement"
+  fun: "fun"
+  search: "Rechercher"
+  change_theme: "Changer le thème"
+  toggle_nav: "Basculer la navigation"
+  current: "(actuel)"
+
+footer:
+  last_updated: "Dernière mise à jour :"
+
+about:
+  news: "nouvelles"
+  latest_posts: "derniers articles"
+  selected_publications: "publications sélectionnées"
+  bio_toggle_formal: "Cliquez ici pour une bio formelle"
+  bio_toggle_informal: "Cliquez ici pour une bio informelle"
+  affiliations: "affiliations"
+
+profiles:
+  co_supervised_by: "co-supervisé par"
+  supervised_by: "supervisé par"
+  at: "à"
+  lab: "labo"
+  labs: "labos"
+  and: "et"
+  from: "du"
+  from_plural: "des"
+  of: "de"
+
+categories:
+  Postdocs: "Postdoctorants"
+  PhD students: "Doctorants"
+  MSc students: "Étudiants à la maîtrise"
+  Undergrads: "Étudiants au baccalauréat"
+  Visitors: "Visiteurs"
+  Alumni: "Anciens membres"
+
+alumni_titles:
+  Postdoc: "Postdoctorat"
+  PhD: "Doctorat"
+  MSc: "Maîtrise"
+  Undergrad: "Baccalauréat"
+  Visiting PhD student: "Doctorant visiteur"
+  Visiting undergrad: "Stagiaire visiteur"
+  Intern with BIOS Health: "Stagiaire chez BIOS Health"
+
+publications:
+  more_author: "auteur de plus"
+  more_authors: "auteurs de plus"
+  click_to_view: "cliquez pour voir"
+  and: "et"
+  in: "Dans"
+  awarded: "Prix"
+  abs: "Rés"
+  bib: "Bib"
+  slides: "Diapos"
+  website: "Site web"
+  older_pubs: "Pour les publications plus anciennes, visitez"
+  type_to_filter: "Filtrer par mot-clé"
+  search_placeholder: "Rechercher des pages, personnes et plus"
+
+news:
+  no_news: "Aucune nouvelle pour le moment..."
+
+months:
+  January: "janvier"
+  February: "février"
+  March: "mars"
+  April: "avril"
+  May: "mai"
+  June: "juin"
+  July: "juillet"
+  August: "août"
+  September: "septembre"
+  October: "octobre"
+  November: "novembre"
+  December: "décembre"
+  Jan: "jan"
+  Feb: "fév"
+  Mar: "mar"
+  Apr: "avr"
+  Jun: "jun"
+  Jul: "jul"
+  Aug: "aoû"
+  Sep: "sep"
+  Oct: "oct"
+  Nov: "nov"
+  Dec: "déc"
+
+page_not_found:
+  title: "Page introuvable"
+  description: "Il semble qu'il y ait une erreur. Rien n'existe ici."
+  redirect: "Vous serez redirigé vers la page principale dans 3 secondes. Si la redirection ne fonctionne pas, retournez à la"
+  home: "page d'accueil"

@@ -1,5 +1,7 @@
 ---
 ---
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.locale[lang] %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -73,7 +75,11 @@
           {%- assign profile_last_name = profile.name | split: ' ' | last | downcase | remove_accents -%}
           {%- assign profile_first_name = profile.name | split: ' ' | first -%}
           {%- if profile_last_name == clean_last_name and author.first contains profile_first_name and profile.category != 'Alumni' -%}
-            {%- assign coauthor_url = profile.name | slugify | prepend: '/group/#' -%}
+            {%- if lang == 'fr' -%}
+              {%- assign coauthor_url = profile.name | slugify | prepend: '/fr/groupe/#' -%}
+            {%- else -%}
+              {%- assign coauthor_url = profile.name | slugify | prepend: '/group/#' -%}
+            {%- endif -%}
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
@@ -82,7 +88,7 @@
           {% if forloop.first == false -%}
             {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
           {%- endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size %}{{ t.publications.and }} {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
           <em>
@@ -103,11 +109,12 @@
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
-      {% if more_authors > 0 %}
-        {%- if more_authors > 1 -%}
-          {% assign more_authors_hide = more_authors_hide | append: 's' %}
-        {%- endif -%}
+      {%- if more_authors > 1 -%}
+        {%- assign more_authors_hide = more_authors | append: ' ' | append: t.publications.more_authors -%}
+      {%- else -%}
+        {%- assign more_authors_hide = more_authors | append: ' ' | append: t.publications.more_author -%}
+      {%- endif -%}
+      {%- if more_authors > 0 -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
@@ -116,10 +123,11 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
+        ,
+        {{ t.publications.and }}
         <span
           class="more-authors"
-          title="click to view {{ more_authors_hide }}"
+          title="{{ t.publications.click_to_view }} {{ more_authors_hide }}"
           onclick="
               var element = $(this);
               element.attr('title', '');
@@ -193,11 +201,11 @@
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
+          {%- if entry.award_name %}{{ entry.award_name }}{% else %}{{ t.publications.awarded }}{% endif -%}
         </a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button">{{ t.publications.abs }}</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
@@ -207,7 +215,7 @@
         <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">URL</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button">{{ t.publications.bib }}</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
@@ -250,13 +258,15 @@
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">{{ t.publications.slides }}</a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
+            {{- t.publications.slides -}}
+          </a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">{{ t.publications.website }}</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

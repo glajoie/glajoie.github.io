@@ -1,3 +1,5 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.locale[lang] %}
 <div class="post">
   <article>
     {% if include.profiles %}
@@ -7,7 +9,9 @@
       {% else %}
         {% assign title_class = 'position' %}
       {% endif %}
-      <h2 class="{{ title_class }}" id="{{ position | downcase | replace: ' ', '-' }}">{{ position }}</h2>
+      {% comment %} Translate category name {% endcomment %}
+      {% assign display_position = t.categories[position] | default: position %}
+      <h2 class="{{ title_class }}" id="{{ position | downcase | replace: ' ', '-' }}">{{ display_position }}</h2>
       {% if position != 'Alumni' %}
         <div class="{{ position |  downcase |  replace: ' ', '-' }}-container">
           {% for profile in include.profiles.items %}
@@ -49,14 +53,16 @@
                   {% assign co-supervisors = profile['co-supervisor'] | split: ' & ' %}
                   <h6>
                     <i
-                      >(co-supervised by
+                      >({{ t.profiles.co_supervised_by }}
                       {% for cs in co-supervisors %}
                         {%- if forloop.first -%}
                           <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
                         {%- elsif forloop.last == false -%}
                           , <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
                         {%- else -%}
-                          {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
+                          {% if forloop.index > 2 %},{% endif %}
+                          {{ t.profiles.and }}
+                          <a href="{{ site.data.collaborators[cs].url }}">{{ cs }}</a>
                         {%- endif -%}
                       {%- endfor -%}
                       )</i
@@ -71,17 +77,26 @@
                       {%- elsif forloop.last == false -%}
                         , <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
                       {%- else -%}
-                        {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {% if forloop.index > 2 %},{% endif %} {{ t.profiles.and }} <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
                       {%- endif -%}
                     {%- endfor -%}
                   {%- endcapture -%}
                   {%- capture institute -%}<a href="{{ profile.institute.url }}">{{- profile.institute.name -}}</a>{%- endcapture -%}
                   <h6>
-                    <i>(supervised by {{ supervisor }} at {{ institute }})</i>
+                    <i
+                      >({{ t.profiles.supervised_by }}
+                      {{ supervisor }}
+                      {{ t.profiles.at }}
+                      {{ institute }})</i
+                    >
                   </h6>
                 {% endif %}
                 {% if profile.content %}
-                  {{ profile.content | markdownify }}
+                  {% if lang == 'fr' and profile.content_fr %}
+                    {{ profile.content_fr | markdownify }}
+                  {% else %}
+                    {{ profile.content | markdownify }}
+                  {% endif %}
                 {% endif %}
               </div>
             </div>
@@ -96,24 +111,35 @@
             {% for profile in subgroup.items %}
               <li class="profile-list-item">
                 {% capture time %}{% if profile.end %}, {% if profile.start %}{{ profile.start }}–{% endif %}{{ profile.end }}{% endif %}{% endcapture %}
-                {% capture co-supervisor %}{% if profile.co-supervisor %}, co-supervised by <a href="{{ site.data.collaborators[profile.co-supervisor].url }}">{{ profile.co-supervisor }}</a>{% endif %}{% endcapture %}
-                {%- capture supervisor -%}
-                  {%- assign supervisors = profile.supervisor | split: " & " -%}
-                  {%- for s in supervisors -%}
-                    {%- if forloop.first -%}
-                      <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
-                    {%- elsif forloop.last == false -%}
-                      , <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                {% capture co-supervisor %}{% if profile.co-supervisor %}, {{ t.profiles.co_supervised_by }} <a href="{{ site.data.collaborators[profile.co-supervisor].url }}">{{ profile.co-supervisor }}</a>{% endif %}{% endcapture %}
+                {%- capture visiting -%}
+                  {%- if profile.title contains "Visiting" -%}
+                    {%- assign supervisors = profile.supervisor | split: " & " -%}
+                    {%- if lang == 'fr' -%}
+                      {{ " " }}{%- if supervisors.size > 1 -%}{{ t.profiles.from_plural }} {{ t.profiles.labs }}{%- else -%}{{ t.profiles.from }} {{ t.profiles.lab }}{%- endif -%}{{ " " }}{{ t.profiles.of }}{{ " " }}
+                      {%- for s in supervisors -%}
+                        {%- if forloop.first -%}<a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {%- elsif forloop.last == false -%}, <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {%- else -%}{% if forloop.index > 2 %},{% endif %} {{ t.profiles.and }} <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {%- endif -%}
+                      {%- endfor -%}
+                      {{ " " }}{{ t.profiles.at }} <a href="{{ profile.institute.url }}">{{- profile.institute.name -}}</a>
                     {%- else -%}
-                      {% if forloop.index > 2 %},{% endif %} and <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                      {{ " " }}{{ t.profiles.from }}{{ " " }}
+                      {%- for s in supervisors -%}
+                        {%- if forloop.first -%}<a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {%- elsif forloop.last == false -%}, <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {%- else -%}{% if forloop.index > 2 %},{% endif %} {{ t.profiles.and }} <a href="{{ site.data.collaborators[s].url }}">{{- s -}}</a>
+                        {%- endif -%}
+                        &rsquo;{%- assign s_last_char = s | slice: -1 -%}{%- if s_last_char != 's' -%}s{%- endif -%}
+                      {%- endfor -%}
+                      {{ " " }}{%- if supervisors.size > 1 -%}{{ t.profiles.labs }}{%- else -%}{{ t.profiles.lab }}{%- endif %} {{ t.profiles.at }} <a href="{{ profile.institute.url }}">{{- profile.institute.name -}}</a>
                     {%- endif -%}
-                    '{%- capture last -%}{{ supervisors[-1] | slice: -1 }}{%- endcapture -%}{%- if last != 's' -%}s{%- endif -%}
-                  {% endfor %}
-                  lab{%- if supervisors.size > 1 -%}s{% endif %} at
-                {% endcapture %}
-                {% capture visiting %}{% if profile.title contains "Visiting" %} from {{ supervisor }}<a href="{{ profile.institute.url }}">{{ profile.institute.name }}</a>{%- endif -%}{%- endcapture -%}
-                {%- capture next -%}{% if profile.next %} → {{ profile.next }}{%- endif -%}{%- endcapture -%}
-                {{ profile.name }} ({{ profile.title -}}
+                  {%- endif -%}
+                {%- endcapture -%}
+                {%- capture next -%}{% if profile.next %}{% if lang == 'fr' and profile.next_fr %} → {{ profile.next_fr }}{% else %} → {{ profile.next }}{% endif %}{%- endif -%}{%- endcapture -%}
+                {%- assign translated_title = t.alumni_titles[profile.title] | default: profile.title -%}
+                {{ profile.name }} ({{ translated_title -}}
                 {{- visiting -}}
                 {{- time -}}
                 {{- co-supervisor }}){{ next }}

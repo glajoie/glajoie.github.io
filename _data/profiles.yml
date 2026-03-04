@@ -7,6 +7,8 @@
   google-scholar: _U-Gw3gAAAAJ
   content: |
     I am a postdoc working in theoretical neuroscience, using mathematical tools from machine learning to understand how learning in the brain works. In particular, I am currently investigating how mice learn, through synaptic plasticity, to control brain-computer interfaces to receive rewards in experimental settings. In my free time, I particularly enjoy creative writing.
+  content_fr: |
+    Je suis postdoctorant en neurosciences théoriques, utilisant des outils mathématiques issus de l'apprentissage automatique pour comprendre comment l'apprentissage fonctionne dans le cerveau. En particulier, j'étudie actuellement comment les souris apprennent, par plasticité synaptique, à contrôler des interfaces cerveau-machine pour recevoir des récompenses en contexte expérimental. Pendant mon temps libre, j'apprécie particulièrement l'écriture créative.
 
 - category: Postdocs
   name: Ryan Vogt
@@ -15,6 +17,8 @@
   google-scholar: P3teu6IAAAAJ
   content: |
     I am a postdoctoral researcher in computational neuroscience interested in the population dynamics of neuronal signals in the brain across different contexts. I develop methods for analyzing the structure of the dynamics in the motor and premotor cortices of non-human primate brains during precision motor tasks. I received my PhD in Applied Mathematics from the University of Washington, for which I characterized the relation between Lyapunov Exponents of RNNs and their performance on and learning of a task. I love to study languages, ride my bike, travel to new countries, and mix cocktails.
+  content_fr: |
+    Je suis chercheur postdoctoral en neurosciences computationnelles, intéressé par la dynamique populationnelle des signaux neuronaux dans le cerveau à travers différents contextes. Je développe des méthodes pour analyser la structure de la dynamique dans les cortex moteur et prémoteur de cerveaux de primates non humains lors de tâches motrices de précision. J'ai obtenu mon doctorat en mathématiques appliquées à l'Université de Washington, où j'ai caractérisé la relation entre les exposants de Lyapunov des RNN et leur performance et apprentissage d'une tâche. J'aime étudier les langues, faire du vélo, voyager dans de nouveaux pays et préparer des cocktails.
 
 - category: Postdocs
   name: Tom George
@@ -23,6 +27,8 @@
   google-scholar: AG49j3MAAAAJ
   content: |
     Incoming!
+  content_fr: |
+    À venir !
 
 # PhD students
 
@@ -34,6 +40,8 @@
   website: https://abdelrzk.github.io/abdelnjupoun/
   content: |
     I am a PhD student in Applied Mathematics with a research focus at the intersection of Artificial Intelligence and Neuroscience. I have an interdisciplinary background in Mathematics, Robotics, and Engineering in Robotic Systems. I am passionate about understanding how the brain works and enthusiastic about using mathematics to explore complex systems. I love all kinds of sports, especially soccer. I also love watching documentaries.
+  content_fr: |
+    Je suis doctorant en mathématiques appliquées avec un axe de recherche à l'intersection de l'intelligence artificielle et des neurosciences. J'ai une formation interdisciplinaire en mathématiques, robotique et ingénierie des systèmes robotiques. Je suis passionné par la compréhension du fonctionnement du cerveau et enthousiaste à l'idée d'utiliser les mathématiques pour explorer des systèmes complexes. J'aime tous les sports, en particulier le soccer. J'aime aussi regarder des documentaires.
 
 - category: PhD students
   name: Avery Hee-Woon Ryoo
@@ -43,6 +51,8 @@
   website: https://averyryoo.github.io
   content: |
     I am a graduate student passionate about deep generative models, particularly their applications in medicine and science. I aim to use ideas from deep learning, multimodal learning, and dynamical systems theory to design generative frameworks that are faster and more sample-efficient — a crucial step in mitigating the widening resource disparity in an era of increasingly large models. My other interests include neuroprosthetics, in-context learning, the Toronto Raptors, and disagreeing with Nanda on a variety of unimportant topics.
+  content_fr: |
+    Je suis étudiant aux cycles supérieurs, passionné par les modèles génératifs profonds, en particulier leurs applications en médecine et en science. Mon objectif est d'utiliser des idées issues de l'apprentissage profond, de l'apprentissage multimodal et de la théorie des systèmes dynamiques pour concevoir des cadres génératifs plus rapides et plus efficaces en données — une étape cruciale pour atténuer le fossé croissant des ressources à l'ère des modèles de plus en plus grands. Mes autres intérêts incluent les neuroprothèses, l'apprentissage en contexte, les Raptors de Toronto et le fait de contredire Nanda sur une variété de sujets sans importance.
 
 - category: PhD students
   name: Eric Elmoznino
@@ -52,6 +62,8 @@
   website: https://ericelmoznino.github.io
   content: |
     I work at the intersection of artificial intelligence and computational neuroscience, and I'm interested in understanding conscious cognition so that we can close the gap between deep learning and the human mind. While current deep neural networks excel in perceptual domains such as vision, they are unable to perform the kind of higher-order reasoning that in humans is associated with conscious, effortful thought. A core hypothesis motivating my work is that conscious representations are simple, discrete, and, most importantly, compositional. My main projects aim to formalize these elusive concepts, better understand how they work in the brain, and develop deep neural network models of them that are loosely inspired by cognitive science.
+  content_fr: |
+    Je travaille à l'intersection de l'intelligence artificielle et des neurosciences computationnelles, et je m'intéresse à la compréhension de la cognition consciente afin de combler le fossé entre l'apprentissage profond et l'esprit humain. Bien que les réseaux de neurones profonds actuels excellent dans les domaines perceptuels tels que la vision, ils sont incapables d'effectuer le type de raisonnement d'ordre supérieur qui, chez l'humain, est associé à la pensée consciente et délibérée. Une hypothèse centrale motivant mon travail est que les représentations conscientes sont simples, discrètes et, surtout, compositionnelles. Mes principaux projets visent à formaliser ces concepts insaisissables, à mieux comprendre comment ils fonctionnent dans le cerveau et à développer des modèles de réseaux de neurones profonds librement inspirés des sciences cognitives.
 
 - category: PhD students
   name: Ezekiel (Zeke) Williams
@@ -60,6 +72,8 @@
   website: https://computationalcognition.ca
   content: |
     I am an applied math doctoral candidate working to uncover principles underlying learning, memory, and prediction, and how these phenomena arise from electrical dynamics inside the brain. My current work is focused on the role of randomness in neural computation, and how biological cell networks are able to learn even when the information to be learned is spread across long timescales. Given the similarity between models of the brain and AI, my work has some relevance to machine learning. Mathematically, most of my interests lie within dynamical systems theory, probability theory, and statistics. I also enjoy making music, the outdoors, Science for the People, and listening to Rage Against the Machine.
+  content_fr: |
+    Je suis doctorant en mathématiques appliquées et je travaille à découvrir les principes sous-jacents à l'apprentissage, la mémoire et la prédiction, ainsi que la manière dont ces phénomènes émergent de la dynamique électrique dans le cerveau. Mes travaux actuels portent sur le rôle du hasard dans le calcul neuronal et sur la capacité des réseaux de cellules biologiques à apprendre même lorsque l'information à apprendre est répartie sur de longues échelles temporelles. Étant donné la similarité entre les modèles du cerveau et l'IA, mes travaux ont une certaine pertinence pour l'apprentissage automatique. Mathématiquement, mes intérêts se situent principalement dans la théorie des systèmes dynamiques, la théorie des probabilités et les statistiques. J'aime aussi faire de la musique, le plein air, Science for the People et écouter Rage Against the Machine.
 
 - category: PhD students
   name: Léo Choinière
@@ -68,6 +82,8 @@
   google-scholar: xZFM7j0AAAAJ
   content: |
     I am a PhD student in neuroscience at Université de Montréal. I am interested in brain-machine interfaces, neural dynamics, and motor control. My main project is aimed at optimizing parameters in the context of neurostimulation in preclinical animal models. In general, my research is situated at the intersection of and requires skills from both experimental and computational neuroscience.
+  content_fr: |
+    Je suis doctorant en neurosciences à l'Université de Montréal. Je m'intéresse aux interfaces cerveau-machine, à la dynamique neuronale et au contrôle moteur. Mon projet principal vise à optimiser les paramètres dans le contexte de la neurostimulation chez des modèles animaux précliniques. De manière générale, ma recherche se situe à l'intersection des neurosciences expérimentales et computationnelles et requiert des compétences dans les deux domaines.
 
 - category: PhD students
   name: Léo Gagnon
@@ -75,6 +91,8 @@
   google-scholar: Ira84zwAAAAJ
   content: |
     I am interested in understanding general learning systems such as LLMs in order to contribute to making them better. Specifically, using ideas from meta-learning, Bayesian statistics and other relevant fields, I study foundational models in controlled settings in search of principles relating their pre-training data, mechanisms and architecture. I also like playing the guitar, spending calories, and asking deep questions.
+  content_fr: |
+    Je m'intéresse à la compréhension des systèmes d'apprentissage généraux tels que les grands modèles de langage afin de contribuer à les améliorer. Plus précisément, en utilisant des idées issues du méta-apprentissage, des statistiques bayésiennes et d'autres domaines pertinents, j'étudie les modèles fondationnels dans des cadres contrôlés à la recherche de principes reliant leurs données de pré-entraînement, leurs mécanismes et leur architecture. J'aime aussi jouer de la guitare, dépenser des calories et poser des questions profondes.
 
 - category: PhD students
   name: Nanda H Krishna
@@ -83,6 +101,8 @@
   website: https://nandahkrishna.com
   content: |
     I am a PhD student working on problems at the intersection of Computational Neuroscience and Deep Learning. I am specifically interested in developing a theoretical understanding of how learning shapes computation in brains and artificial neural networks. I also work on building foundation models for neuroscience, with the goal of improving decoding in brain-computer interfaces. In my free time, you can find me obsessing over figures, watching cricket, reading comics, or coming up with Korean phrases that annoy Avery.
+  content_fr: |
+    Je suis doctorant et je travaille sur des problèmes à l'intersection des neurosciences computationnelles et de l'apprentissage profond. Je m'intéresse particulièrement au développement d'une compréhension théorique de la façon dont l'apprentissage façonne le calcul dans les cerveaux et les réseaux de neurones artificiels. Je travaille également à la construction de modèles fondationnels pour les neurosciences, dans le but d'améliorer le décodage dans les interfaces cerveau-ordinateur. Pendant mon temps libre, on me trouve à peaufiner des figures, regarder du cricket, lire des bandes dessinées ou inventer des phrases en coréen qui agacent Avery.
 
 - category: PhD students
   name: Pingsheng Li
@@ -91,6 +111,8 @@
   google-scholar: Xd8kzPgAAAAJ
   content: |
     Incoming!
+  content_fr: |
+    À venir !
 
 - category: PhD students
   name: Pravish Sainath
@@ -98,6 +120,8 @@
   co-supervisor: Lune Bellec
   content: |
     I'm a PhD student at Université de Montréal. The purpose of my life and study is to better understand the nature and mechanisms of both natural and artificial intelligence. I am mostly interested in using computational and cognitive neuroscience to improve deep and reinforcement learning methods and applying deep learning methods to better understand the brain.
+  content_fr: |
+    Je suis doctorant à l'Université de Montréal. Le but de ma vie et de mes études est de mieux comprendre la nature et les mécanismes de l'intelligence tant naturelle qu'artificielle. Je m'intéresse principalement à l'utilisation des neurosciences computationnelles et cognitives pour améliorer les méthodes d'apprentissage profond et par renforcement, ainsi qu'à l'application des méthodes d'apprentissage profond pour mieux comprendre le cerveau.
 
 - category: PhD students
   name: Sangnie Bhardwaj
@@ -106,6 +130,8 @@
   google-scholar: 0IWgVz4AAAAJ
   content: |
     I'm a PhD student at UdeM and also a researcher at Google Montreal, where I work on building robust and generalizable image representations. I am interested in achieving this by incorporating principles inspired by visual learning in human brains.
+  content_fr: |
+    Je suis doctorante à l'UdeM et également chercheuse chez Google Montréal, où je travaille à la construction de représentations d'images robustes et généralisables. Je m'intéresse à atteindre cet objectif en incorporant des principes inspirés de l'apprentissage visuel dans le cerveau humain.
 
 - category: PhD students
   name: Sarthak Mittal
@@ -115,6 +141,8 @@
   website: https://sarthmit.github.io
   content: |
     I am a PhD student interested in designing unified AI systems that are not constrained to solving a single task but learn general-purpose optimization routines implicitly in their inference mechanism, allowing them to generalize to novel tasks in a few-shot manner. In search of this goal, my explorations revolve around architectural inductive biases and representation learning to encourage compositional computations in Neural Networks as well as generative modeling and Bayesian inference methodologies akin to probabilistic meta-learning setups. A core guiding principle of my work is to efficiently model some crucial invariances underlying a vast majority of tasks, for example optimization procedures, and I believe that leveraging AI systems to model exactly these invariances would lead to few-shot generalization capabilities across novel tasks.
+  content_fr: |
+    Je suis doctorant et je m'intéresse à la conception de systèmes d'IA unifiés qui ne sont pas limités à la résolution d'une seule tâche, mais qui apprennent implicitement des routines d'optimisation à usage général dans leur mécanisme d'inférence, leur permettant de se généraliser à de nouvelles tâches avec peu d'exemples. Dans cette quête, mes explorations portent sur les biais inductifs architecturaux et l'apprentissage de représentations pour encourager les calculs compositionnels dans les réseaux de neurones, ainsi que sur la modélisation générative et les méthodologies d'inférence bayésienne apparentées aux configurations de méta-apprentissage probabiliste. Un principe directeur central de mon travail est de modéliser efficacement certaines invariances cruciales sous-jacentes à une grande majorité de tâches, par exemple les procédures d'optimisation, et je crois que l'utilisation de systèmes d'IA pour modéliser exactement ces invariances mènerait à des capacités de généralisation avec peu d'exemples à travers de nouvelles tâches.
 
 - category: PhD students
   name: Ximeng Mao
@@ -122,6 +150,8 @@
   google-scholar: Q_0TqBgAAAAJ
   content: |
     I am a PhD student in computer science working on machine learning. I am widely interested in applying machine learning and deep learning methods to problems rooted from brain-machine interfaces, and I aim to leverage both deterministic and stochastic models for generic solutions. My current research focuses on meta learning for few-shot adaptation of personalized models and foundation models for neural decoding. My other interests include probabilistic inference, reinforcement learning and medical image analysis.
+  content_fr: |
+    Je suis doctorant en informatique et je travaille en apprentissage automatique. Je m'intéresse largement à l'application des méthodes d'apprentissage automatique et profond aux problèmes liés aux interfaces cerveau-machine, et je vise à exploiter des modèles déterministes et stochastiques pour des solutions génériques. Ma recherche actuelle porte sur le méta-apprentissage pour l'adaptation avec peu d'exemples de modèles personnalisés et de modèles fondationnels pour le décodage neuronal. Mes autres intérêts incluent l'inférence probabiliste, l'apprentissage par renforcement et l'analyse d'images médicales.
 
 # MSc students
 
@@ -133,6 +163,8 @@
   website: https://juandguerra20.github.io
   content: |
     I am an MASc student in Software Engineering interested in the theory and applications of machine learning. My passion lies in developing state-of-the-art learning methods and translating them into impactful tools for healthcare, particularly in the field of neuroscience. I work on optimizing machine learning-driven neurostimulation strategies to support recovery following traumatic spinal cord injury. My current research focuses on the algorithmic development of Gaussian Processes to address the complexity of this problem. Aside from my academic pursuits, I enjoy playing volleyball and exploring a variety of musical instruments.
+  content_fr: |
+    Je suis étudiant à la maîtrise en génie logiciel, intéressé par la théorie et les applications de l'apprentissage automatique. Ma passion réside dans le développement de méthodes d'apprentissage à la fine pointe et leur traduction en outils ayant un impact sur les soins de santé, en particulier dans le domaine des neurosciences. Je travaille à l'optimisation de stratégies de neurostimulation guidées par l'apprentissage automatique pour soutenir la récupération après une lésion traumatique de la moelle épinière. Ma recherche actuelle porte sur le développement algorithmique de processus gaussiens pour aborder la complexité de ce problème. En dehors de mes activités académiques, j'aime jouer au volleyball et explorer une variété d'instruments de musique.
 
 - category: MSc students
   name: Julia Price
@@ -140,6 +172,8 @@
   co-supervisor: Numa Dancause
   content: |
     Incoming!
+  content_fr: |
+    À venir !
 
 - category: MSc students
   name: Tejas Kasetty
@@ -149,6 +183,8 @@
   website: https://tejaskasetty.github.io
   content: |
     I am a graduate student in Computer Science interested in understanding higher-order cognition and building AI systems that replicate them. My current research lies at the intersection of information theory, cognitive neuroscience, and deep learning, exploring compression as a unifying principle underlying various functionalities in biological and artificial systems, from perception to abstract reasoning. I am also interested in developing a mathematical framework that links structural motifs in neural connectivity to functionality through the lens of dynamics. Outside of research, I enjoy chess, climbing, snowboarding, and playing football.
+  content_fr: |
+    Je suis étudiant aux cycles supérieurs en informatique, intéressé par la compréhension de la cognition d'ordre supérieur et la construction de systèmes d'IA qui les reproduisent. Ma recherche actuelle se situe à l'intersection de la théorie de l'information, des neurosciences cognitives et de l'apprentissage profond, explorant la compression comme principe unificateur sous-jacent à diverses fonctionnalités dans les systèmes biologiques et artificiels, de la perception au raisonnement abstrait. Je m'intéresse également au développement d'un cadre mathématique reliant les motifs structurels de la connectivité neuronale à la fonctionnalité à travers le prisme de la dynamique. En dehors de la recherche, j'apprécie les échecs, l'escalade, le snowboard et le football.
 
 # Undergrads
 
@@ -158,6 +194,8 @@
   co-supervisor: Dhanya Sridhar
   content: |
     Incoming!
+  content_fr: |
+    À venir !
 
 - category: Undergrads
   name: Mathys Loiselle
@@ -165,6 +203,8 @@
   co-supervisor: Matthew Perich
   content: |
     Incoming!
+  content_fr: |
+    À venir !
 
 # Visitors
 
@@ -175,23 +215,27 @@
   name: Olivier Codol
   title: Postdoc
   next: Research Scientist at Meta Reality Labs
+  next_fr: Chercheur scientifique chez Meta Reality Labs
   co-supervisor: Matthew Perich
 
 - category: Alumni
   name: Roman Pogodin
   title: Postdoc
   next: Research Scientist at Google (Paradigms of Intelligence Team)
+  next_fr: Chercheur scientifique chez Google (Paradigms of Intelligence Team)
   co-supervisor: Blake Richards
 
 - category: Alumni
   name: Alexandre Payeur
   title: Postdoc
   next: Research Scientist at Mila
+  next_fr: Chercheur scientifique au Mila
 
 - category: Alumni
   name: Maximilian Puelma Touzel
   title: Postdoc
   next: Research Scientist at Mila
+  next_fr: Chercheur scientifique au Mila
   co-supervisor: Yoshua Bengio
 
 - category: Alumni
@@ -205,12 +249,14 @@
   name: Jean-Pierre Falet
   title: PhD
   next: Research Scientist at LawZero
+  next_fr: Chercheur scientifique chez LawZero
   co-supervisor: Yoshua Bengio
 
 - category: Alumni
   name: Amine Natik
   title: PhD
   next: Quantitative Analyst at Constellation
+  next_fr: Analyste quantitatif chez Constellation
   co-supervisor: Guy Wolf
 
 - category: Alumni
@@ -222,12 +268,14 @@
   name: Laura Suárez
   title: PhD
   next: Research Scientist at Mila
+  next_fr: Chercheuse scientifique au Mila
   co-supervisor: Bratislav Misic
 
 - category: Alumni
   name: Thomas George
   title: PhD
   next: Researcher at Orange Innovation
+  next_fr: Chercheur chez Orange Innovation
   co-supervisor: Pascal Vincent
 
 - category: Alumni
@@ -239,6 +287,7 @@
   name: Mohammad Pezeshki
   title: PhD
   next: Postdoc at Meta
+  next_fr: Postdoctorant chez Meta
   co-supervisor: Yoshua Bengio
 
 ## MSc students
@@ -257,6 +306,7 @@
   name: Bhargav Kanuparthi
   title: MSc
   next: Research Scientist at Deep Genomics
+  next_fr: Chercheur scientifique chez Deep Genomics
   co-supervisor: Yoshua Bengio
 
 - category: Alumni
@@ -269,27 +319,32 @@
   name: Léo Gagnon
   title: Undergrad
   next: PhD student at Mila and UdeM
+  next_fr: Doctorant au Mila et à l'UdeM
 
 - category: Alumni
   name: Léo Choinière
   title: Undergrad
   next: PhD student at Mila and UdeM
+  next_fr: Doctorant au Mila et à l'UdeM
   co-supervisor: Numa Dancause
 
 - category: Alumni
   name: Victor Geadah
   title: Undergrad
   next: Master's student at Cambridge University
+  next_fr: Étudiant à la maîtrise à l'Université de Cambridge
 
 - category: Alumni
   name: Stefan Horoi
   title: Undergrad
   next: PhD student at Mila and UdeM
+  next_fr: Doctorant au Mila et à l'UdeM
 
 - category: Alumni
   name: Martin Jammes-Floreani
   title: Undergrad
   next: MSc student at Imperial College London
+  next_fr: Étudiant à la maîtrise à l'Imperial College London
 
 - category: Alumni
   name: Aude Forcione-Lambert
@@ -311,6 +366,7 @@
   name: Yuhan Helena Liu
   title: Visiting PhD student
   next: Postdoc at Princeton University
+  next_fr: Postdoctorante à l'Université Princeton
   supervisor: Eric Shea-Brown
   institute:
     name: UW
@@ -320,6 +376,7 @@
   name: Ryan Vogt
   title: Visiting PhD student
   next: Postdoc at Mila and UdeM
+  next_fr: Postdoctorant au Mila et à l'UdeM
   supervisor: Eli Shlizerman
   institute:
     name: UW
@@ -329,6 +386,7 @@
   name: Colin Bredenberg
   title: Visiting PhD student
   next: Postdoc at Mila and UdeM
+  next_fr: Postdoctorant au Mila et à l'UdeM
   supervisor: Eero Simoncelli & Cristina Savin
   institute:
     name: NYU

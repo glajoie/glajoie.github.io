@@ -1,0 +1,96 @@
+nav:
+  about: "about"
+  group: "group"
+  publications: "publications"
+  teaching: "teaching"
+  fun: "fun"
+  search: "Search"
+  change_theme: "Change theme"
+  toggle_nav: "Toggle navigation"
+  current: "(current)"
+
+footer:
+  last_updated: "Last updated:"
+
+about:
+  news: "news"
+  latest_posts: "latest posts"
+  selected_publications: "selected publications"
+  bio_toggle_formal: "Click here for a formal bio"
+  bio_toggle_informal: "Click here for an informal bio"
+  affiliations: "affiliations"
+
+profiles:
+  co_supervised_by: "co-supervised by"
+  supervised_by: "supervised by"
+  at: "at"
+  lab: "lab"
+  labs: "labs"
+  and: "and"
+  from: "from"
+
+categories:
+  Postdocs: "Postdocs"
+  PhD students: "PhD students"
+  MSc students: "MSc students"
+  Undergrads: "Undergrads"
+  Visitors: "Visitors"
+  Alumni: "Alumni"
+
+alumni_titles:
+  Postdoc: "Postdoc"
+  PhD: "PhD"
+  MSc: "MSc"
+  Undergrad: "Undergrad"
+  Visiting PhD student: "Visiting PhD student"
+  Visiting undergrad: "Visiting undergrad"
+  Intern with BIOS Health: "Intern with BIOS Health"
+
+publications:
+  more_author: "more author"
+  more_authors: "more authors"
+  click_to_view: "click to view"
+  and: "and"
+  in: "In"
+  awarded: "Awarded"
+  abs: "Abs"
+  bib: "Bib"
+  slides: "Slides"
+  website: "Website"
+  older_pubs: "For older publications, visit"
+  type_to_filter: "Type to filter"
+  search_placeholder: "Search for pages, people, and more"
+
+news:
+  no_news: "No news so far..."
+
+months:
+  January: "January"
+  February: "February"
+  March: "March"
+  April: "April"
+  May: "May"
+  June: "June"
+  July: "July"
+  August: "August"
+  September: "September"
+  October: "October"
+  November: "November"
+  December: "December"
+  Jan: "Jan"
+  Feb: "Feb"
+  Mar: "Mar"
+  Apr: "Apr"
+  Jun: "Jun"
+  Jul: "Jul"
+  Aug: "Aug"
+  Sep: "Sep"
+  Oct: "Oct"
+  Nov: "Nov"
+  Dec: "Dec"
+
+page_not_found:
+  title: "Page not found"
+  description: "Looks like there has been a mistake. Nothing exists here."
+  redirect: "You will be redirected to the main page within 3 seconds. If not redirected, please go back to the"
+  home: "home page"

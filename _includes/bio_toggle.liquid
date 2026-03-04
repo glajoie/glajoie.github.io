@@ -1,3 +1,5 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.locale[lang] %}
 <div id="about-bio-toggle-parent" class="bio-toggle">
   <script type="text/javascript">
     let bioToggle = () => {
@@ -13,9 +15,10 @@
         let tempBioToggle = bioToggle.innerHTML;
         bio.innerHTML = bioAlt.innerHTML;
         bioAlt.innerHTML = tempBio;
-        if (tempBioToggle.includes('informal')) {
-            tempBioToggle = tempBioToggle.replace('an informal', 'a formal')
-            tempBioToggle = tempBioToggle.replace('fa-user-secret', 'fa-user-tie');
+        var formalText = '{{ t.about.bio_toggle_formal }}';
+        var informalText = '{{ t.about.bio_toggle_informal }}';
+        if (tempBioToggle.includes('fa-user-secret')) {
+            bioToggle.innerHTML = '<i class="fa fa-user-tie"></i>&nbsp;&nbsp;' + formalText;
             let easterEgg = document.getElementById('about-bio-easter-egg');
             if (easterEgg) {
                 easterEgg.classList.add('d-none');
@@ -27,8 +30,7 @@
                 gif.classList.add('d-none');
             }
         } else {
-            tempBioToggle = tempBioToggle.replace('a formal', 'an informal');
-            tempBioToggle = tempBioToggle.replace('fa-user-tie', 'fa-user-secret');
+            bioToggle.innerHTML = '<i class="fa fa-user-secret"></i>&nbsp;&nbsp;' + informalText;
             {% if include.easter-eggs %}
             let easterEgg = document.getElementById('about-bio-easter-egg');
             if (easterEgg) {
@@ -81,9 +83,10 @@
             }
             {% endif %}
         }
-        bioToggle.innerHTML = tempBioToggle;
     }
   </script>
-  <a id="about-bio-toggle" class="btn" role="button" onclick="bioToggle()"><i class="fa fa-user-tie"></i>&nbsp;&nbsp;Click here for a formal bio</a>
+  <a id="about-bio-toggle" class="btn" role="button" onclick="bioToggle()"
+    ><i class="fa fa-user-tie"></i>&nbsp;&nbsp;{{ t.about.bio_toggle_formal -}}
+  </a>
   <a id="about-bio-easter-egg" class="btn d-none" role="button"><i class="fa fa-dice"></i></a>
 </div>

@@ -1,34 +1,49 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.locale[lang] %}
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+    {% assign all_news = site.news | reverse %}
+    {% comment %} Filter news by language: items without lang field default to English {% endcomment %}
+    {% assign news_items = '' | split: '' %}
+    {% for item in all_news %}
+      {% assign item_lang = item.lang | default: 'en' %}
+      {% if item_lang == lang %}
+        {% assign news_items = news_items | push: item %}
       {% endif %}
-    >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
+    {% endfor %}
+    {% assign news_size = news_items | size %}
+    {% if news_size > 0 %}
+      <div
+        class="table-responsive"
+        {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+          style="max-height: 60vw"
         {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
+      >
+        <table class="table table-sm table-borderless">
+          {% if include.limit and page.announcements.limit %}
+            {% assign news_limit = page.announcements.limit %}
+          {% else %}
+            {% assign news_limit = news_size %}
+          {% endif %}
+          {% for item in news_items limit: news_limit %}
+            <tr>
+              <!-- prettier-ignore -->
+              <th scope="row" style="width: 20%">{%- if lang == 'fr' -%}{%- assign m_abbr = item.date | date: '%b' -%}{{ item.date | date: '%d' }} {{ t.months[m_abbr] }} {{ item.date | date: '%Y' }}{%- else -%}{{ item.date | date: '%b %d, %Y' }}{%- endif -%}</th>
+              <td>
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% else %}
+      <p>{{ t.news.no_news }}</p>
+    {% endif %}
   {% else %}
-    <p>No news so far...</p>
+    <p>{{ t.news.no_news }}</p>
   {% endif %}
 </div>
