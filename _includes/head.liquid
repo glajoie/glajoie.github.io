@@ -69,6 +69,15 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+<!-- Alternate language links -->
+{% if page.lang_pair %}
+  {% assign current_lang = page.lang | default: 'en' %}
+  {% assign other_lang = 'fr' %}
+  {% if current_lang == 'fr' %}{% assign other_lang = 'en' %}{% endif %}
+  <link rel="alternate" hreflang="{{ current_lang }}" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{{ other_lang }}" href="{{ site.url }}{{ page.lang_pair }}">
+{% endif %}
+
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
 {% if site.enable_darkmode %}

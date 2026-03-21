@@ -1,14 +1,10 @@
 ---
 layout: page
-permalink: /group/
-redirect_from:
-  - /people/
-title: group
-description: members of the {{ site.group_alt_name }} at {{ site.institute_name }}
-nav: true
-nav_order: 1
-lang: en
-lang_pair: /fr/group/
+permalink: /fr/group/
+title: groupe
+description: membres du groupe de recherche en calcul neuronal à {{ site.institute_name }}
+lang: fr
+lang_pair: /group/
 ---
 
 {% assign profiles = site.data.profiles | group_by: 'category' %}

@@ -1,3 +1,5 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign t = site.data.locale[lang] %}
 {% capture footer_contents %}
   &copy; Copyright {{ site.time | date: '%Y' }}
   {{ site.group_name }}. {{ site.footer_text }}
@@ -5,7 +7,12 @@
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
   {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+    {%- if lang == 'fr' -%}
+      {%- assign m_full = 'now' | date: '%B' -%}
+      {{ t.footer.last_updated }} {{ 'now' | date: '%d' }} {{ t.months[m_full] }} {{ 'now' | date: '%Y' }}.
+    {%- else -%}
+      {{ t.footer.last_updated }} {{ 'now' | date: '%B %d, %Y' }}.
+    {%- endif -%}
   {% endif %}
 {% endcapture %}
 

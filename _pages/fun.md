@@ -5,6 +5,8 @@ title: fun
 description: pictures from group retreats and mountaineering adventures
 nav: true
 nav_order: 4
+lang: en
+lang_pair: /fr/fun/
 ---
 
 <div class="container">
