@@ -22,13 +22,13 @@
 
 - category: Postdocs
   name: Tom George
-  # image: tom.jpg
+  image: tom.jpg
   co-supervisor: Blake Richards
   google-scholar: AG49j3MAAAAJ
   content: |
-    Incoming!
+    I'm a postdoctoral researcher and CNS fellow in computational neuroscience. My research centres on using theoretical techniques and building open-source computational tools to understand the links between neural dynamics and behaviour. I also work on interpretability methods to understand how neural foundation models learn across diverse datasets. In my spare time I struggle to learn French and enjoy being only the second [Tom George](#alumni) to pass through this lab!
   content_fr: |
-    À venir !
+    Je suis chercheur postdoctoral et fellow CNS en neurosciences computationnelles. Mes travaux portent sur l'utilisation de méthodes théoriques et le développement d'outils computationnels open-source pour appréhender les liens entre dynamique neuronale et comportement. Je travaille également sur des méthodes d'interprétabilité afin de comprendre comment les modèles de fondation neuronaux apprennent à partir de jeux de données variés. Pendant mon temps libre, je m'escrime tant bien que mal à apprendre le français, tout en m’amusant d’être seulement le deuxième [Tom George](#alumni) à passer par ce laboratoire.
 
 # PhD students
 
