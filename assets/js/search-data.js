@@ -67,6 +67,18 @@ ninja.data = [{
           section: "News",},{id: "news-félicitations-à-amine-natik-pour-la-soutenance-réussie-de-sa-thèse-de-doctorat-mortar-board",
           title: 'Félicitations à Amine Natik pour la soutenance réussie de sa thèse de doctorat...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
           description: "",
+          section: "News",},{id: "news-congratulations-to-ezekiel-williams-on-defending-his-phd-thesis-mortar-board",
+          title: 'Congratulations to Ezekiel Williams on defending his PhD thesis! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
+          section: "News",},{id: "news-félicitations-à-zeke-williams-pour-l-obtention-de-son-doctorat-mortar-board",
+          title: 'Félicitations à Zeke Williams pour l’obtention de son doctorat ! :mortar_board:'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
+          section: "News",},{id: "news-colin-starts-as-an-assistant-professor-at-the-university-of-oregon-we-wish-him-all-the-best-in-this-next-chapter-and-raise-a-blanche-de-charlevoix-in-his-honour-beers",
+          title: 'Colin starts as an Assistant Professor at the University of Oregon! We wish...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
+          section: "News",},{id: "news-colin-devient-professeur-adjoint-à-l-université-de-l-oregon-nous-lui-souhaitons-le-meilleur-pour-ce-nouveau-chapitre-et-levons-une-blanche-de-charlevoix-à-sa-santé-beers",
+          title: 'Colin devient professeur adjoint à l’Université de l’Oregon ! Nous lui souhaitons le...'.replace(/:([a-zA-Z0-9_+-]+):/g, ""),
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
@@ -109,12 +121,12 @@ ninja.data = [{
         handler: () => {
           window.open("https://drive.google.com/file/d/1Q4mVLYZignHPm0I1RggS7h7oFttNgpgL/view", "_blank");
         },
-      },{id: "profile-colin-bredenberg",
-      title: "Colin Bredenberg",
+      },{id: "profile-matteo-alleman",
+      title: "Matteo Alleman",
       description: "Postdocs",
       section: "Group",
       handler: () => {
-        window.location.href = "/group#colin-bredenberg";
+        window.location.href = "/group#matteo-alleman";
       },
     },{id: "profile-ryan-vogt",
       title: "Ryan Vogt",
@@ -144,6 +156,13 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#avery-hee-woon-ryoo";
       },
+    },{id: "profile-chen-jiang",
+      title: "Chen Jiang",
+      description: "PhD students",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#chen-jiang";
+      },
     },{id: "profile-eric-elmoznino",
       title: "Eric Elmoznino",
       description: "PhD students",
@@ -151,12 +170,12 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#eric-elmoznino";
       },
-    },{id: "profile-ezekiel-zeke-williams",
-      title: "Ezekiel (Zeke) Williams",
+    },{id: "profile-juan-david-guerra",
+      title: "Juan David Guerra",
       description: "PhD students",
       section: "Group",
       handler: () => {
-        window.location.href = "/group#ezekiel-zeke-williams";
+        window.location.href = "/group#juan-david-guerra";
       },
     },{id: "profile-léo-choinière",
       title: "Léo Choinière",
@@ -207,19 +226,19 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#sarthak-mittal";
       },
+    },{id: "profile-thomas-jiralerspong",
+      title: "Thomas Jiralerspong",
+      description: "PhD students",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#thomas-jiralerspong";
+      },
     },{id: "profile-ximeng-mao",
       title: "Ximeng Mao",
       description: "PhD students",
       section: "Group",
       handler: () => {
         window.location.href = "/group#ximeng-mao";
-      },
-    },{id: "profile-juan-david-guerra",
-      title: "Juan David Guerra",
-      description: "MSc students",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#juan-david-guerra";
       },
     },{id: "profile-julia-price",
       title: "Julia Price",
@@ -228,19 +247,19 @@ ninja.data = [{
       handler: () => {
         window.location.href = "/group#julia-price";
       },
+    },{id: "profile-mauricio-rivera",
+      title: "Mauricio Rivera",
+      description: "MSc students",
+      section: "Group",
+      handler: () => {
+        window.location.href = "/group#mauricio-rivera";
+      },
     },{id: "profile-tejas-kasetty",
       title: "Tejas Kasetty",
       description: "MSc students",
       section: "Group",
       handler: () => {
         window.location.href = "/group#tejas-kasetty";
-      },
-    },{id: "profile-skylar-gu",
-      title: "Skylar Gu",
-      description: "Undergrads",
-      section: "Group",
-      handler: () => {
-        window.location.href = "/group#skylar-gu";
       },
     },{id: "profile-mathys-loiselle",
       title: "Mathys Loiselle",
