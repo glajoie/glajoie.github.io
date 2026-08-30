@@ -1,14 +1,13 @@
 # Postdocs
 
 - category: Postdocs
-  name: Colin Bredenberg
-  image: colin.jpg
-  co-supervisor: Blake Richards
-  google-scholar: _U-Gw3gAAAAJ
+  name: Matteo Alleman
+  # image: matteo.jpg
+  co-supervisor: Taylor Webb
   content: |
-    I am a postdoc working in theoretical neuroscience, using mathematical tools from machine learning to understand how learning in the brain works. In particular, I am currently investigating how mice learn, through synaptic plasticity, to control brain-computer interfaces to receive rewards in experimental settings. In my free time, I particularly enjoy creative writing.
+    Incoming!
   content_fr: |
-    Je suis postdoctorant en neurosciences théoriques, utilisant des outils mathématiques issus de l'apprentissage automatique pour comprendre comment l'apprentissage fonctionne dans le cerveau. En particulier, j'étudie actuellement comment les souris apprennent, par plasticité synaptique, à contrôler des interfaces cerveau-machine pour recevoir des récompenses en contexte expérimental. Pendant mon temps libre, j'apprécie particulièrement l'écriture créative.
+    À venir !
 
 - category: Postdocs
   name: Ryan Vogt
@@ -55,6 +54,14 @@
     Je suis étudiant aux cycles supérieurs, passionné par les modèles génératifs profonds, en particulier leurs applications en médecine et en science. Mon objectif est d'utiliser des idées issues de l'apprentissage profond, de l'apprentissage multimodal et de la théorie des systèmes dynamiques pour concevoir des cadres génératifs plus rapides et plus efficaces en données — une étape cruciale pour atténuer le fossé croissant des ressources à l'ère des modèles de plus en plus grands. Mes autres intérêts incluent les neuroprothèses, l'apprentissage en contexte, les Raptors de Toronto et le fait de contredire Nanda sur une variété de sujets sans importance.
 
 - category: PhD students
+  name: Chen Jiang
+  co-supervisor: Paul Masset
+  content: |
+    Incoming!
+  content_fr: |
+    À venir !
+
+- category: PhD students
   name: Eric Elmoznino
   image: eric.jpg
   co-supervisor: Yoshua Bengio
@@ -66,14 +73,14 @@
     Je travaille à l'intersection de l'intelligence artificielle et des neurosciences computationnelles, et je m'intéresse à la compréhension de la cognition consciente afin de combler le fossé entre l'apprentissage profond et l'esprit humain. Bien que les réseaux de neurones profonds actuels excellent dans les domaines perceptuels tels que la vision, ils sont incapables d'effectuer le type de raisonnement d'ordre supérieur qui, chez l'humain, est associé à la pensée consciente et délibérée. Une hypothèse centrale motivant mon travail est que les représentations conscientes sont simples, discrètes et, surtout, compositionnelles. Mes principaux projets visent à formaliser ces concepts insaisissables, à mieux comprendre comment ils fonctionnent dans le cerveau et à développer des modèles de réseaux de neurones profonds librement inspirés des sciences cognitives.
 
 - category: PhD students
-  name: Ezekiel (Zeke) Williams
-  image: zeke.jpg
-  google-scholar: KwgL380AAAAJ
-  website: https://computationalcognition.ca
+  name: Juan David Guerra
+  image: juan.jpg
+  google-scholar: kUk84YwAAAAJ
+  website: https://juandguerra20.github.io
   content: |
-    I am an applied math doctoral candidate working to uncover principles underlying learning, memory, and prediction, and how these phenomena arise from electrical dynamics inside the brain. My current work is focused on the role of randomness in neural computation, and how biological cell networks are able to learn even when the information to be learned is spread across long timescales. Given the similarity between models of the brain and AI, my work has some relevance to machine learning. Mathematically, most of my interests lie within dynamical systems theory, probability theory, and statistics. I also enjoy making music, the outdoors, Science for the People, and listening to Rage Against the Machine.
+    I am a PhD student interested in the theory and applications of machine learning. My passion lies in developing state-of-the-art learning methods and translating them into impactful tools for healthcare, particularly in the field of neuroscience. I work on optimizing machine learning-driven neurostimulation strategies to support recovery following traumatic spinal cord injury. My current research focuses on the algorithmic development of Gaussian Processes to address the complexity of this problem. Aside from my academic pursuits, I enjoy playing volleyball and exploring a variety of musical instruments.
   content_fr: |
-    Je suis doctorant en mathématiques appliquées et je travaille à découvrir les principes sous-jacents à l'apprentissage, la mémoire et la prédiction, ainsi que la manière dont ces phénomènes émergent de la dynamique électrique dans le cerveau. Mes travaux actuels portent sur le rôle du hasard dans le calcul neuronal et sur la capacité des réseaux de cellules biologiques à apprendre même lorsque l'information à apprendre est répartie sur de longues échelles temporelles. Étant donné la similarité entre les modèles du cerveau et l'IA, mes travaux ont une certaine pertinence pour l'apprentissage automatique. Mathématiquement, mes intérêts se situent principalement dans la théorie des systèmes dynamiques, la théorie des probabilités et les statistiques. J'aime aussi faire de la musique, le plein air, Science for the People et écouter Rage Against the Machine.
+    Je suis doctorant intéressé par la théorie et les applications de l'apprentissage automatique. Ma passion réside dans le développement de méthodes d'apprentissage à la fine pointe et leur traduction en outils ayant un impact sur les soins de santé, en particulier dans le domaine des neurosciences. Je travaille à l'optimisation de stratégies de neurostimulation guidées par l'apprentissage automatique pour soutenir la récupération après une lésion traumatique de la moelle épinière. Ma recherche actuelle porte sur le développement algorithmique de processus gaussiens pour aborder la complexité de ce problème. En dehors de mes activités académiques, j'aime jouer au volleyball et explorer une variété d'instruments de musique.
 
 - category: PhD students
   name: Léo Choinière
@@ -145,6 +152,14 @@
     Je suis doctorant et je m'intéresse à la conception de systèmes d'IA unifiés qui ne sont pas limités à la résolution d'une seule tâche, mais qui apprennent implicitement des routines d'optimisation à usage général dans leur mécanisme d'inférence, leur permettant de se généraliser à de nouvelles tâches avec peu d'exemples. Dans cette quête, mes explorations portent sur les biais inductifs architecturaux et l'apprentissage de représentations pour encourager les calculs compositionnels dans les réseaux de neurones, ainsi que sur la modélisation générative et les méthodologies d'inférence bayésienne apparentées aux configurations de méta-apprentissage probabiliste. Un principe directeur central de mon travail est de modéliser efficacement certaines invariances cruciales sous-jacentes à une grande majorité de tâches, par exemple les procédures d'optimisation, et je crois que l'utilisation de systèmes d'IA pour modéliser exactement ces invariances mènerait à des capacités de généralisation avec peu d'exemples à travers de nouvelles tâches.
 
 - category: PhD students
+  name: Thomas Jiralerspong
+  co-supervisor: Yoshua Bengio
+  content: |
+    Incoming!
+  content_fr: |
+    À venir !
+
+- category: PhD students
   name: Ximeng Mao
   image: ximeng.jpg
   google-scholar: Q_0TqBgAAAAJ
@@ -156,20 +171,17 @@
 # MSc students
 
 - category: MSc students
-  name: Juan David Guerra
-  image: juan.jpg
-  co-supervisor: Marco Bonizzato
-  google-scholar: kUk84YwAAAAJ
-  website: https://juandguerra20.github.io
-  content: |
-    I am an MASc student in Software Engineering interested in the theory and applications of machine learning. My passion lies in developing state-of-the-art learning methods and translating them into impactful tools for healthcare, particularly in the field of neuroscience. I work on optimizing machine learning-driven neurostimulation strategies to support recovery following traumatic spinal cord injury. My current research focuses on the algorithmic development of Gaussian Processes to address the complexity of this problem. Aside from my academic pursuits, I enjoy playing volleyball and exploring a variety of musical instruments.
-  content_fr: |
-    Je suis étudiant à la maîtrise en génie logiciel, intéressé par la théorie et les applications de l'apprentissage automatique. Ma passion réside dans le développement de méthodes d'apprentissage à la fine pointe et leur traduction en outils ayant un impact sur les soins de santé, en particulier dans le domaine des neurosciences. Je travaille à l'optimisation de stratégies de neurostimulation guidées par l'apprentissage automatique pour soutenir la récupération après une lésion traumatique de la moelle épinière. Ma recherche actuelle porte sur le développement algorithmique de processus gaussiens pour aborder la complexité de ce problème. En dehors de mes activités académiques, j'aime jouer au volleyball et explorer une variété d'instruments de musique.
-
-- category: MSc students
   name: Julia Price
   # image: julia.jpg
   co-supervisor: Numa Dancause
+  content: |
+    Incoming!
+  content_fr: |
+    À venir !
+
+- category: MSc students
+  name: Mauricio Rivera
+  co-supervisor: Marco Bonizzato
   content: |
     Incoming!
   content_fr: |
@@ -189,15 +201,6 @@
 # Undergrads
 
 - category: Undergrads
-  name: Skylar Gu
-  # image: skylar.jpg
-  co-supervisor: Dhanya Sridhar
-  content: |
-    Incoming!
-  content_fr: |
-    À venir !
-
-- category: Undergrads
   name: Mathys Loiselle
   # image: mathys.jpg
   co-supervisor: Matthew Perich
@@ -210,6 +213,13 @@
 
 # Alumni
 ## Postdocs
+
+- category: Alumni
+  name: Colin Bredenberg
+  title: Postdoc
+  next: Assistant Professor at the University of Oregon
+  next_fr: Professeur adjoint à l'Université de l'Oregon
+  co-supervisor: Blake Richards
 
 - category: Alumni
   name: Olivier Codol
@@ -244,6 +254,12 @@
   co-supervisor: Numa Dancause
 
 ## PhD students
+
+- category: Alumni
+  name: Ezekiel Williams
+  title: PhD
+  next: Postdoc at Imperial College London
+  next_fr: Postdoctorant à l'Imperial College London
 
 - category: Alumni
   name: Jean-Pierre Falet
@@ -293,9 +309,17 @@
 ## MSc students
 
 - category: Alumni
+  name: Juan David Guerra
+  title: MSc
+  next: PhD student at Mila and UdeM
+  next_fr: Doctorant au Mila et à l'UdeM
+
+- category: Alumni
   name: Rose Guay-Hottin
   title: MSc
   co-supervisor: Marco Bonizzato
+  next: Machine Learning Engineer at Flyscan
+  next_fr: Ingénieure en apprentissage automatique chez Flyscan
 
 - category: Alumni
   name: Aude Forcione-Lambert
@@ -314,6 +338,15 @@
   title: MSc
 
 ## Undergrads
+
+- category: Alumni
+  name: Yinhan Peter Lu
+  title: Undergrad
+
+- category: Alumni
+  name: Skylar Gu
+  title: Undergrad
+  co-supervisor: Dhanya Sridhar
 
 - category: Alumni
   name: Léo Gagnon
@@ -350,6 +383,8 @@
   name: Aude Forcione-Lambert
   title: Undergrad
   co-supervisor: Guy Wolf
+  next: MSc student at Mila and UdeM
+  next_fr: Étudiante à la maîtrise au Mila et à l'UdeM
 
 ## Visitors
 ### PhD students
@@ -357,6 +392,8 @@
 - category: Alumni
   name: Ayesha Vermani
   title: Visiting PhD student
+  next: Postdoc at Emory University
+  next_fr: Postdoctorante à l'Université Emory
   supervisor: Il Memming Park
   institute:
     name: Champalimaud
@@ -397,6 +434,8 @@
 - category: Alumni
   name: Vivian White
   title: Visiting undergrad
+  next: PhD student at the University of British Columbia
+  next_fr: Doctorante à l'Université de la Colombie-Britannique
   co-supervisor: Guy Wolf
   supervisor: Kameron Decker-Harris
   institute:

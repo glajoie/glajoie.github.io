@@ -4,6 +4,9 @@
 "CCAI":
   url: https://www.caiac.ca/en/conferences
 
+"COLM":
+  url: https://colmweb.org/
+
 "ICASSP":
   url: https://signalprocessingsociety.org/events/conferences
 
@@ -67,6 +70,10 @@
 
 "Nat Mach Intell":
   url: https://www.nature.com/natmachintell/
+  color: "#08573b"
+
+"Nat Neurosci":
+  url: https://www.nature.com/neuro/
   color: "#08573b"
 
 "Neural Comput":
